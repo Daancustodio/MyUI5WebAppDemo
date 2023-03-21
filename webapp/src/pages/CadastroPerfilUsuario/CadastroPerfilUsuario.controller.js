@@ -25,6 +25,17 @@ sap.ui.define(
 				console.log("controller [CadastroPerfilUsuario] Este método é chamado após a destruição do View associada");
 			},	
 
+			onNewPress(oEvent){
+                if(!this._oNewProfileFragment){
+					this._oNewProfileFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.CadastroPerfilUsuario.CadastroPerfilUsuario", this);
+					this.getView().addDependent(this._oNewProfileFragment);
+					this._oNewProfileFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
+				}
+
+				this._oNewProfileFragment.open()
+
+			}
+
 		});
 	}
 );

@@ -1,18 +1,16 @@
 {
   "navigation": [
-    
-      
     {
       "title": "Commom.CadastroPerfilUsuario",
       "icon": "sap-icon://key-user-settings",
       "expanded": true,
       "key": "CadastroPerfilUsuario"
-    },
+    },    
     {
-      "title": "Commom.ListaTarefas",
-      "icon": "sap-icon://activities",
+      "title": "Commom.Autorizacoes",
+      "icon": "sap-icon://locked",
       "expanded": true,
-      "key": "listaTarefas"
+      "key": "Autorizacoes"
     }
   ],
   "fixedNavigation": [

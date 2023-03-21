@@ -1,0 +1,182 @@
+<mvc:View
+	controllerName="MyUI5WebApp.src.pages.Autorizacoes.Autorizacoes"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	displayBlock="true"
+	xmlns:table="sap.ui.table"
+	xmlns:l="sap.ui.layout"
+	xmlns:c="sap.ui.core"	
+	height="100%">
+	<Page 
+		showNavButton="true" 
+		title="{i18n>Commom.Autorizacoes}" 
+		navButtonPress="onNavBack">
+		
+		<content>
+			<IconTabBar
+				id="idIconTabBar"
+				select=".onFilterSelect"
+				class="sapUiResponsiveContentPadding">
+				<items>
+					<IconTabFilter
+						icon="sap-icon://business-card"
+						iconColor="Critical"
+						text="Perfil"
+						>
+						
+						<l:ResponsiveSplitter
+							defaultPane="default">
+								<l:PaneContainer>
+									<l:SplitPane
+									requiredParentWidth="400" id="default"
+									>
+										<l:layoutData>
+											<l:SplitterLayoutData size="{expandPanel>/sizeSplitter}" minSize="450" />
+										</l:layoutData>
+										<Panel headerText="{i18n>Commom.CadastroPerfilUsuario}">
+											<headerToolbar>
+												<Toolbar>
+													<SearchField  placeholder="{i18n>Commom.ProcurarPerfil}"  width="100%" liveChange="searchUser" showSearchButton="false" />
+													<ToolbarSpacer />
+													<Button width="auto" class="sapUiTinyMarginEnd" icon="sap-icon://sort" type="Transparent"  />
+												</Toolbar>
+											</headerToolbar>
+											<List id="list" items="{
+													path: 'PerfilUsuario>/'
+												}">
+												<StandardListItem 
+													press="onProfilePres" 
+													type="Navigation" 
+													title="{PerfilUsuario>PerfilName}" 
+													description="{PerfilUsuario>Code}" 
+													icon="sap-icon://business-card" />
+											</List>
+										</Panel>
+									</l:SplitPane>
+									<l:PaneContainer orientation="Horizontal">
+										<l:SplitPane requiredParentWidth="800">
+											<l:layoutData>
+												<l:SplitterLayoutData size="auto" />
+											</l:layoutData>
+											<Panel visible="{expandPanel>/visiblePanel}" expandAnimation="true" expandable="true" expanded="{expandPanel>/expanded}" headerText="{i18n>Commom.AutorizacaoDoPerfil} {selectedUserModel>/apelido}">
+												<table:TreeTable rowHeight="40" id="TreeTable" rows="{
+														path: 'Autorizacoes>/'
+													}" selectionMode="None" enableSelectAll="false" ariaLabelledBy="title">
+													<table:extension>
+														<OverflowToolbar height="auto" style="Clear">
+															<Button icon="sap-icon://expand" type="Transparent" tooltip="{i18n>app.expand}" press="onExpandall" />											
+															<Button icon="sap-icon://collapse" type="Transparent" tooltip="{i18n>app.collapse}" press="onCollapseAll" />
+															
+															<MenuButton type="Emphasized" icon="sap-icon://expand-all" width="auto" text="Opções">
+																<menu>
+																	<Menu>
+																		<MenuItem text="{i18n>app.authorizeAll}" icon="sap-icon://message-success" press="onAuthorizeAllPress" />
+																		<MenuItem text="{i18n>app.UnauthorizeAll}" icon="sap-icon://message-error" press="onUnauthorizeAllPress" />
+																		<MenuItem text="{i18n>app.OnlyView}" icon="sap-icon://show" press="onOnlySeePress" />
+																	</Menu>
+																</menu>
+															</MenuButton>
+															<ToolbarSpacer />
+															<Button
+																icon="sap-icon://decline"
+																type="Reject"
+																press="onClosePanel"
+															>
+																
+															</Button>
+														</OverflowToolbar>
+													</table:extension>
+													<table:columns>
+														<table:Column hAlign="Begin" width="auto">
+															<Label text="{i18n>app.resource}" />
+															<table:template>
+																<Text text="{Autorizacoes>descricao}" wrapping="false" />
+															</table:template>
+														</table:Column>
+														<table:Column hAlign="Begin" width="auto">
+															<Label text="{i18n>app.userAuthorization}" />
+															<table:template>
+																<Select id="selectRefresh" type="Default" items="{
+																		path: 'AutorizacaoRecursos>/',
+																		templateShareable: false
+																	}" selectedKey="{
+																		path: 'Autorizacoes>autorizacaoRecurso',
+																		formatOptions: {
+																			type: 'sap.ui.model.type.Integer'
+																		}
+																	}" visible="{= !!${Autorizacoes>tipo}}" forceSelection="false" change="onUserAutorizacaoChange">
+																	<c:Item key="{AutorizacaoRecursos>tipo}" text="{AutorizacaoRecursos>descricao}" />
+																</Select>
+															</table:template>
+														</table:Column>
+													</table:columns>
+													<table:footer>
+														<VBox
+														>
+															<HBox justifyContent="SpaceAround" class="sapUiTinyMargin"
+															>
+																<Button
+																	activeIcon=""
+																	ariaHasPopup="None"
+																	enabled="true"
+																	icon="sap-icon://decline"
+																	iconDensityAware="true"
+																	iconFirst="true"
+																	text="{i18n>app.undo}"
+																	textDirection="Inherit"
+																	type="Reject"
+																	width="10em"
+																	press="onUndoPress"
+																/>
+
+																<Button
+																	activeIcon=""
+																	enabled="{= ${selectedUserModel>/administrador} || ${selectedUserModel>/master} || ${selectedUserModel>/super} ? false : true}"
+																	icon="sap-icon://accept"
+																	iconDensityAware="true"
+																	iconFirst="true"
+																	text="{i18n>app.apply}"
+																	textDirection="Inherit"
+																	type="Accept"
+																	width="10em"
+																	press="onApplyPress"
+																/>
+															</HBox>
+
+															<HBox justifyContent="Center" class="sapUiTinyMargin"
+															>
+																
+																<Text
+																renderWhitespace="false"
+																text="{= ${selectedUserModel>/administrador} || ${selectedUserModel>/master} || ${selectedUserModel>/super} ? ${i18n>app.adminErrorMessage} : ''}"
+																textDirection="Inherit"
+																wrapping="true"
+																wrappingType="Normal"									
+																/>
+															</HBox>
+													
+														</VBox>
+														
+														
+															
+
+													</table:footer>
+												</table:TreeTable>
+											</Panel>
+										</l:SplitPane>
+									</l:PaneContainer>
+								</l:PaneContainer>
+						</l:ResponsiveSplitter>
+					</IconTabFilter>
+					<IconTabFilter
+						icon="sap-icon://employee"
+						iconColor="Positive"
+						
+						text="Usuários"
+						key="Ok" />		
+					
+				</items>		
+			</IconTabBar>
+		</content>	
+	</Page>
+</mvc:View>

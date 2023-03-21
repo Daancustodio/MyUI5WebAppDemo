@@ -142,5 +142,9 @@ sap.ui.define([
 
 			return base.join('/');
 		},
+
+		closeDialog(oEvent){
+			oEvent.getSource().getParent().getParent().close()
+		}
 	});
 });

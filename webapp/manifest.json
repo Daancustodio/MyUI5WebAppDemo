@@ -95,12 +95,7 @@
           "pattern": "",
           "name": "login",
           "target": "login"
-        },
-        {
-          "pattern": "listaTarefas",
-          "name": "listaTarefas",
-          "target": "listaTarefas"
-        },
+        },       
         {
           "pattern": "settings/:userName:",
           "name": "settings",
@@ -115,25 +110,20 @@
           "pattern": "languages",
           "name": "languages",
           "target": "languages"
-        },
-        {
-          "pattern": "teste",
-          "name": "teste",
-          "target": "teste"
-        },
+        },        
         {
           "pattern": "CadastroPerfilUsuario",
           "name": "CadastroPerfilUsuario",
           "target": "CadastroPerfilUsuario"
+        },
+        {
+          "pattern": "Autorizacoes",
+          "name": "Autorizacoes",
+          "target": "Autorizacoes"
         }
       ],
       "targets": {
-        "listaTarefas": {
-          "viewName": "ListaTarefas",
-          "viewLevel": 2,
-          "transition": "flip",
-          "viewPath": "MyUI5WebApp.src.pages.listaTarefas"
-        },
+       
         "settings": {
           "viewName": "Edit",
           "viewLevel": 3,
@@ -161,16 +151,16 @@
           "viewName": "Languages",
           "viewLevel": 3,
           "viewPath": "MyUI5WebApp.src.pages.languages"
-        },
-        "teste": {
-          "viewName": "teste",
-          "viewLevel": 3,
-          "viewPath": "MyUI5WebApp.src.pages.teste"
-        },
+        },        
         "CadastroPerfilUsuario": {
           "viewName": "CadastroPerfilUsuario",
           "viewLevel": 3,
           "viewPath": "MyUI5WebApp.src.pages.CadastroPerfilUsuario"
+        },
+        "Autorizacoes": {
+          "viewName": "Autorizacoes",
+          "viewLevel": 3,
+          "viewPath": "MyUI5WebApp.src.pages.Autorizacoes"
         }
       }
     }
