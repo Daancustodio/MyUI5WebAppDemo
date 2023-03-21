@@ -1,0 +1,62 @@
+<mvc:View
+	controllerName="MyUI5WebApp.src.pages.CadastroPerfilUsuario.CadastroPerfilUsuario"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"	
+	height="100%">
+	<Page 
+		showNavButton="true" 
+		title="{i18n>Commom.CadastroPerfilUsuario}" 
+		navButtonPress="onNavBack">
+		
+		<content>	
+			<Table 
+			inset="false"
+			alternateRowColors="true"
+			items="{PerfilUsuario>/}">
+			<headerToolbar>
+				<OverflowToolbar>
+					<SearchField  placeholder="Pesquisar perfil"  width="40%" />
+					<Button  icon="sap-icon://sort"   press="onReset"/>
+					<ToolbarSpacer/>
+					<Button  icon="sap-icon://add" type="Emphasized"   text="{i18n>Commom.New}"  press="onReset"/>
+
+				</OverflowToolbar>
+			</headerToolbar>
+			<columns>
+				<Column
+					width="12em">
+					<Text text="{i18n>Commom.Code}" />
+				</Column>
+				<Column
+					minScreenWidth="Tablet"
+					demandPopin="true">
+					<Text text="{i18n>Commom.PerfilName}" />
+				</Column>
+				<Column
+					width="84px" 
+					minScreenWidth="Tablet"
+					demandPopin="true"
+					hAlign="Center">
+					<Text text="{i18n>Commom.Actions}" />
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem vAlign="Middle">
+					<cells>
+						<ObjectIdentifier							
+							 title="{PerfilUsuario>Code}"/>
+						<Text
+							text="{PerfilUsuario>PerfilName}" />
+						<HBox justifyContent="SpaceBetween" alignContent="SpaceBetween" > 
+							<Button  icon="sap-icon://edit" type="Default" />
+							<Button  icon="sap-icon://delete" type="Reject"    />
+						</HBox>
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+
+		</content>	
+	</Page>
+</mvc:View>
