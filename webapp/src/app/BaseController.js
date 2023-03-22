@@ -145,6 +145,15 @@ sap.ui.define([
 
 		closeDialog(oEvent){
 			oEvent.getSource().getParent().getParent().close()
+		},
+		onSortReverse(oEvent){
+			let table = oEvent.getSource().getParent().getParent();
+			let bindingInfo = table.getBindingInfo("items");
+			let model = table.getModel(bindingInfo.model);
+			let data = model.getData();
+			let reverseData = data.reverse();
+			model.setData(reverseData)
+			model.refresh(true);
 		}
 	});
 });

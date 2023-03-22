@@ -17,7 +17,7 @@
 			<headerToolbar>
 				<OverflowToolbar>
 					<SearchField  placeholder="Pesquisar perfil"  width="40%" />
-					<Button  icon="sap-icon://sort"   press=""/>
+					<Button  icon="sap-icon://sort"   press=".onSortReverse"/>
 					<ToolbarSpacer/>
 					<Button  icon="sap-icon://add" type="Emphasized"   text="{i18n>Commom.New}"  press="onNewPress"/>
 

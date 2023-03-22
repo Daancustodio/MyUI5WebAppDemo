@@ -1,18 +1,22 @@
 [
     {
         "Code" : "0001",
-        "PerfilName" : "Administrativo"
+        "PerfilName" : "Administrativo",
+        "usuarioId": 64
     },
     {
         "Code" : "0002",
-        "PerfilName" : "Financeiro"
+        "PerfilName" : "Financeiro",
+        "usuarioId": 64
     },
     {
         "Code" : "0003",
-        "PerfilName" : "Supervisor"
+        "PerfilName" : "Supervisor",
+        "usuarioId": 64
     },
     {
         "Code" : "0004",
-        "PerfilName" : "Gestor"
+        "PerfilName" : "Gestor",
+        "usuarioId": 64
     }
 ]

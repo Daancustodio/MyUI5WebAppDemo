@@ -1,0 +1,1831 @@
+[
+    {
+      "children": [
+        {
+          "children": [],
+          "id": 13758,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "PrestacaoContasVisualizar",
+          "autorizacaoCodigoPai": "PrestacaoContasGrupo",
+          "descricao": "Visualizar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13759,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "PrestacaoContasAutorizarTreplica",
+          "autorizacaoCodigoPai": "PrestacaoContasGrupo",
+          "descricao": "Autorizar Treplica",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13764,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "ImportacaoVisualizar",
+              "autorizacaoCodigoPai": "ImportarPrestacao",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13763,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ImportarPrestacao",
+          "autorizacaoCodigoPai": "PrestacaoContasGrupo",
+          "descricao": "Importar Mensal",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13757,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "PrestacaoContasGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Prestacao de Contas",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "id": 13761,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ArquivosAuxiliaresVisualizar",
+          "autorizacaoCodigoPai": "ArquivosAuxiliaresGrupo",
+          "descricao": "Visualizar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13762,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ArquivosAuxiliaresAuditar",
+          "autorizacaoCodigoPai": "ArquivosAuxiliaresGrupo",
+          "descricao": "Auditar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13760,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "ArquivosAuxiliaresGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Arquivos Auxiliares",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "id": 13772,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "OcorrenciaVisualizar",
+          "autorizacaoCodigoPai": "OcorrenciaGrupo",
+          "descricao": "Visualizar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13773,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "OcorrenciaAuditar",
+          "autorizacaoCodigoPai": "OcorrenciaGrupo",
+          "descricao": "Auditar Ocorrencia",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13774,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "OcorrenciaAnular",
+          "autorizacaoCodigoPai": "OcorrenciaGrupo",
+          "descricao": "Anular Ocorrencia",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13771,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "OcorrenciaGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Ocorrencias",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13777,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "AnaliseVisualizar",
+              "autorizacaoCodigoPai": "AnaliseFinanceiraGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13776,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "AnaliseFinanceiraGrupo",
+          "autorizacaoCodigoPai": "FinanceiroGrupo",
+          "descricao": "Analise Financeira",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13779,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "ContasFinanceirasVisualizar",
+              "autorizacaoCodigoPai": "ContasFinanceirasGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13780,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "ContasFinanceirasOcorrencia",
+              "autorizacaoCodigoPai": "ContasFinanceirasGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13778,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ContasFinanceirasGrupo",
+          "autorizacaoCodigoPai": "FinanceiroGrupo",
+          "descricao": "Contas Bancárias",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13782,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "DocumentoVisualizar",
+              "autorizacaoCodigoPai": "DocumentoGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13783,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "DocumentoFinanceiroAuditar",
+              "autorizacaoCodigoPai": "DocumentoGrupo",
+              "descricao": "Auditar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13781,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "DocumentoGrupo",
+          "autorizacaoCodigoPai": "FinanceiroGrupo",
+          "descricao": "Documento",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13785,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "ExtratosVisualizar",
+              "autorizacaoCodigoPai": "ExtratosBancariosGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13786,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "ExtratosOcorrencia",
+              "autorizacaoCodigoPai": "ExtratosBancariosGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13784,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ExtratosBancariosGrupo",
+          "autorizacaoCodigoPai": "FinanceiroGrupo",
+          "descricao": "Extratos Bancarios",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13788,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RepassesVisualizar",
+              "autorizacaoCodigoPai": "RepassesGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13789,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RepassesOcorrencia",
+              "autorizacaoCodigoPai": "RepassesGrupo",
+              "descricao": "Auditar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13791,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "EmpenhosVisualizar",
+              "autorizacaoCodigoPai": "RepassesGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13792,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "EmpenhosOcorrencia",
+              "autorizacaoCodigoPai": "RepassesGrupo",
+              "descricao": "Auditar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13787,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "RepassesGrupo",
+          "autorizacaoCodigoPai": "FinanceiroGrupo",
+          "descricao": "Repasses",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13790,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "EmpenhosGrupo",
+          "autorizacaoCodigoPai": "FinanceiroGrupo",
+          "descricao": "Empenhos",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13794,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "ContasAPagarVisualizar",
+              "autorizacaoCodigoPai": "ContasAPagarGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13795,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "ContasAPagarOcorrencia",
+              "autorizacaoCodigoPai": "ContasAPagarGrupo",
+              "descricao": "Ocorrência",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13793,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ContasAPagarGrupo",
+          "autorizacaoCodigoPai": "FinanceiroGrupo",
+          "descricao": "Contas a Pagar",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13775,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "FinanceiroGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Financeiro",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [],
+      "id": 13796,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "NotaFiscalGrupo",
+      "autorizacaoCodigoPai": "NotaFiscalGrupo",
+      "descricao": "Nota Fiscal",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [],
+      "id": 13797,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "NotaFiscalVisualizar",
+      "autorizacaoCodigoPai": "NotaFiscalVisualizar",
+      "descricao": "Visualizar",
+      "tipo": 1,
+      "tipoEnum": 1,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13800,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "BalanceteVizualizar",
+              "autorizacaoCodigoPai": "BalanceteGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13801,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "BalanceteOcorrencia",
+              "autorizacaoCodigoPai": "BalanceteGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13799,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "BalanceteGrupo",
+          "autorizacaoCodigoPai": "ContabilidadeGrupo",
+          "descricao": "Balancete",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13803,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "BalancoVisualizar",
+              "autorizacaoCodigoPai": "BalancoPatrimonialGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13804,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "BalancoOcorrencia",
+              "autorizacaoCodigoPai": "BalancoPatrimonialGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13802,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "BalancoPatrimonialGrupo",
+          "autorizacaoCodigoPai": "ContabilidadeGrupo",
+          "descricao": "Balanço Patrimonial",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13806,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "DREVisualizar",
+              "autorizacaoCodigoPai": "DREGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13807,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "DREOcorrencia",
+              "autorizacaoCodigoPai": "DREGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13805,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "DREGrupo",
+          "autorizacaoCodigoPai": "ContabilidadeGrupo",
+          "descricao": "DRE",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13809,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "DiarioVisualizar",
+              "autorizacaoCodigoPai": "DiarioGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13810,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "DiarioOcorrencia",
+              "autorizacaoCodigoPai": "DiarioGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13808,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "DiarioGrupo",
+          "autorizacaoCodigoPai": "ContabilidadeGrupo",
+          "descricao": "Diario",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13812,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RazaoVisualizar",
+              "autorizacaoCodigoPai": "RazaoGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13813,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RazaoOcorrencia",
+              "autorizacaoCodigoPai": "RazaoGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13811,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "RazaoGrupo",
+          "autorizacaoCodigoPai": "ContabilidadeGrupo",
+          "descricao": "Razão",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13815,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "EstoqueVisualizar",
+              "autorizacaoCodigoPai": "EstoqueGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13816,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "EstoqueOcorrencia",
+              "autorizacaoCodigoPai": "EstoqueGrupo",
+              "descricao": "Ocorrência",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13814,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "EstoqueGrupo",
+          "autorizacaoCodigoPai": "ContabilidadeGrupo",
+          "descricao": "Estoque",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13798,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "ContabilidadeGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Contabilidade",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13766,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "MetasProducaoVisualizar",
+              "autorizacaoCodigoPai": "MetasProducaoGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13767,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "MetasProducaoOcorrencia",
+              "autorizacaoCodigoPai": "MetasProducaoGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13765,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "MetasProducaoGrupo",
+          "autorizacaoCodigoPai": "RecursosHumanosGrupo",
+          "descricao": "Metas de Produção",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13769,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "DeclaracoesVisualizar",
+              "autorizacaoCodigoPai": "DeclaracoesGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13770,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "DeclaracoesOcorrencia",
+              "autorizacaoCodigoPai": "DeclaracoesGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13768,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "DeclaracoesGrupo",
+          "autorizacaoCodigoPai": "RecursosHumanosGrupo",
+          "descricao": "Declarações",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13819,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "FolhaVisualizar",
+              "autorizacaoCodigoPai": "PagamentoFolhaGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13820,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "FolhaAOcorrencia",
+              "autorizacaoCodigoPai": "PagamentoFolhaGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13818,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "PagamentoFolhaGrupo",
+          "autorizacaoCodigoPai": "RecursosHumanosGrupo",
+          "descricao": "Pagamento Folha",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13822,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "ServidoresVisualizar",
+              "autorizacaoCodigoPai": "ServidoresPublicosGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13823,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "ServidoresOcorrencia",
+              "autorizacaoCodigoPai": "ServidoresPublicosGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13821,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ServidoresPublicosGrupo",
+          "autorizacaoCodigoPai": "RecursosHumanosGrupo",
+          "descricao": "Servidores Públicos",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13825,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "CargosServidoresVisualizar",
+              "autorizacaoCodigoPai": "CargosServidoresGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13826,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "CargosServidoresOcorrencia",
+              "autorizacaoCodigoPai": "CargosServidoresGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13824,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "CargosServidoresGrupo",
+          "autorizacaoCodigoPai": "RecursosHumanosGrupo",
+          "descricao": "Cargos Servidores Públicos",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13828,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "GastosColaboradoresVisualizar",
+              "autorizacaoCodigoPai": "GastosColaboradoresGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13829,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "GastosColaboradoresOcorrencia",
+              "autorizacaoCodigoPai": "GastosColaboradoresGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13827,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "GastosColaboradoresGrupo",
+          "autorizacaoCodigoPai": "RecursosHumanosGrupo",
+          "descricao": "Gastos Colaboradores",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13831,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "EncargosFolhaVisualizar",
+              "autorizacaoCodigoPai": "EncargosFolhaGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13832,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "EncargosFolhaOcorrencia",
+              "autorizacaoCodigoPai": "EncargosFolhaGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13830,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "EncargosFolhaGrupo",
+          "autorizacaoCodigoPai": "RecursosHumanosGrupo",
+          "descricao": "Encargos Folha",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13834,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "ArquivosFolhaVisualizar",
+              "autorizacaoCodigoPai": "ArquivosFolhaGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13835,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "ArquivosFolhaOcorrencia",
+              "autorizacaoCodigoPai": "ArquivosFolhaGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13833,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ArquivosFolhaGrupo",
+          "autorizacaoCodigoPai": "RecursosHumanosGrupo",
+          "descricao": "Arquivos Folha",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13837,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "FolhaPEVisualizar",
+              "autorizacaoCodigoPai": "FolhaPagamentoPEGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13838,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "FolhaPEOcorrencia",
+              "autorizacaoCodigoPai": "FolhaPagamentoPEGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13836,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "FolhaPagamentoPEGrupo",
+          "autorizacaoCodigoPai": "RecursosHumanosGrupo",
+          "descricao": "Folha de Pagamento (PE)",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13840,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "FolhaPernambucoVisualizar",
+              "autorizacaoCodigoPai": "FolhaPagamentoPernambucoGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13841,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "FolhaPernambucoOcorrencia",
+              "autorizacaoCodigoPai": "FolhaPagamentoPernambucoGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13839,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "FolhaPagamentoPernambucoGrupo",
+          "autorizacaoCodigoPai": "RecursosHumanosGrupo",
+          "descricao": "Folha de Pernambuco",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13843,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "BeneficiosFolhaVisualizar",
+              "autorizacaoCodigoPai": "BeneficiosFolhaGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [],
+              "id": 13844,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "BeneficioFolhaOcorrencia",
+              "autorizacaoCodigoPai": "BeneficiosFolhaGrupo",
+              "descricao": "Ocorrencia",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13842,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "BeneficiosFolhaGrupo",
+          "autorizacaoCodigoPai": "RecursosHumanosGrupo",
+          "descricao": "Benefícios Folha",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13817,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "RecursosHumanosGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Recursos Humanos",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "id": 13846,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "BensMoveisVisualizar",
+          "autorizacaoCodigoPai": "BensMoveisGrupo",
+          "descricao": "Visualizar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13847,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "BensMoveisOcorrencia",
+          "autorizacaoCodigoPai": "BensMoveisGrupo",
+          "descricao": "Ocorrencia",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13845,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "BensMoveisGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Bens Moveis",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "id": 13849,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ContratosVisualizar",
+          "autorizacaoCodigoPai": "ContratosGrupo",
+          "descricao": "Visualizar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13850,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ContratosOcorrencia",
+          "autorizacaoCodigoPai": "ContratosGrupo",
+          "descricao": "Ocorrencia",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13848,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "ContratosGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Contratos",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "id": 13852,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "DemandasJudiciaisVisualizar",
+          "autorizacaoCodigoPai": "JudicialGrupo",
+          "descricao": "Visualizar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13853,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "DemandasJudiciaisOcorrencia",
+          "autorizacaoCodigoPai": "JudicialGrupo",
+          "descricao": "Ocorrencia",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13851,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "JudicialGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Judicial",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13856,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RelatorioFinanceiroVisualizar",
+              "autorizacaoCodigoPai": "RelatorioFinanceiroGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13855,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "RelatorioFinanceiroGrupo",
+          "autorizacaoCodigoPai": "RelatoriosGrupo",
+          "descricao": "Relatório Financeiro",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13858,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RelatorioContabilVisualizar",
+              "autorizacaoCodigoPai": "RelatorioContabilGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [
+                {
+                  "children": [],
+                  "id": 13860,
+                  "usuarioId": 64,
+                  "autorizacaoCodigo": "RelatorioContabilFinanceiroVisualizar",
+                  "autorizacaoCodigoPai": "RelatorioContabilFinanceiroGrupo",
+                  "descricao": "Visualizar",
+                  "tipo": 1,
+                  "tipoEnum": 1,
+                  "autorizacaoRecurso": 1
+                }
+              ],
+              "id": 13859,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RelatorioContabilFinanceiroGrupo",
+              "autorizacaoCodigoPai": "RelatorioContabilGrupo",
+              "descricao": "Relatório Contábil Financeiro",
+              "tipo": 0,
+              "tipoEnum": 0,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13857,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "RelatorioContabilGrupo",
+          "autorizacaoCodigoPai": "RelatoriosGrupo",
+          "descricao": "Relatório Contábil",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13862,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RelatorioFornecedoresVisualizar",
+              "autorizacaoCodigoPai": "RelatorioFornecedoresGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13861,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "RelatorioFornecedoresGrupo",
+          "autorizacaoCodigoPai": "RelatoriosGrupo",
+          "descricao": "Relatório Fornecedores",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13864,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RelatorioRecursosHumanosVisualizar",
+              "autorizacaoCodigoPai": "RelatorioRecursosHumanosGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [
+                {
+                  "children": [],
+                  "id": 13866,
+                  "usuarioId": 64,
+                  "autorizacaoCodigo": "RelatoriosServidoresPublicosVisualizar",
+                  "autorizacaoCodigoPai": "RelatoriosServidoresPublicosGrupo",
+                  "descricao": "Visualizar",
+                  "tipo": 1,
+                  "tipoEnum": 1,
+                  "autorizacaoRecurso": 1
+                }
+              ],
+              "id": 13865,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RelatoriosServidoresPublicosGrupo",
+              "autorizacaoCodigoPai": "RelatorioRecursosHumanosGrupo",
+              "descricao": "Relatórios Servidores Públicos",
+              "tipo": 0,
+              "tipoEnum": 0,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [
+                {
+                  "children": [],
+                  "id": 13868,
+                  "usuarioId": 64,
+                  "autorizacaoCodigo": "RelatorioMemoriaDeCalculoVisualizar",
+                  "autorizacaoCodigoPai": "RelatorioMemoriaDeCalculoGrupo",
+                  "descricao": "Visualizar",
+                  "tipo": 1,
+                  "tipoEnum": 1,
+                  "autorizacaoRecurso": 1
+                }
+              ],
+              "id": 13867,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RelatorioMemoriaDeCalculoGrupo",
+              "autorizacaoCodigoPai": "RelatorioRecursosHumanosGrupo",
+              "descricao": "Relatório Memória de Cálculo",
+              "tipo": 0,
+              "tipoEnum": 0,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [
+                {
+                  "children": [],
+                  "id": 13870,
+                  "usuarioId": 64,
+                  "autorizacaoCodigo": "RelatoriosFolhaVisualizar",
+                  "autorizacaoCodigoPai": "RelatoriosFolhaGrupo",
+                  "descricao": "Visualizar",
+                  "tipo": 1,
+                  "tipoEnum": 1,
+                  "autorizacaoRecurso": 1
+                }
+              ],
+              "id": 13869,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RelatoriosFolhaGrupo",
+              "autorizacaoCodigoPai": "RelatorioRecursosHumanosGrupo",
+              "descricao": "Relatórios Folha Normal",
+              "tipo": 0,
+              "tipoEnum": 0,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [
+                {
+                  "children": [],
+                  "id": 13872,
+                  "usuarioId": 64,
+                  "autorizacaoCodigo": "RelatorioFolhaPEVisualizar",
+                  "autorizacaoCodigoPai": "RelatorioFolhaPEGrupo",
+                  "descricao": "Visualizar",
+                  "tipo": 1,
+                  "tipoEnum": 1,
+                  "autorizacaoRecurso": 1
+                }
+              ],
+              "id": 13871,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RelatorioFolhaPEGrupo",
+              "autorizacaoCodigoPai": "RelatorioRecursosHumanosGrupo",
+              "descricao": "Relatórios Folha PE",
+              "tipo": 0,
+              "tipoEnum": 0,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [
+                {
+                  "children": [],
+                  "id": 13874,
+                  "usuarioId": 64,
+                  "autorizacaoCodigo": "RelatorioRescisoesFolhaPEVisualizar",
+                  "autorizacaoCodigoPai": "RelatorioRescisoesFolhaPEGrupo",
+                  "descricao": "Visualizar",
+                  "tipo": 1,
+                  "tipoEnum": 1,
+                  "autorizacaoRecurso": 1
+                }
+              ],
+              "id": 13873,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RelatorioRescisoesFolhaPEGrupo",
+              "autorizacaoCodigoPai": "RelatorioRecursosHumanosGrupo",
+              "descricao": "Relatório Rescisão Folha PE",
+              "tipo": 0,
+              "tipoEnum": 0,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13863,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "RelatorioRecursosHumanosGrupo",
+          "autorizacaoCodigoPai": "RelatoriosGrupo",
+          "descricao": "Relatório Recursos Humanos",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13876,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RelatorioPatrimonioVisualizar",
+              "autorizacaoCodigoPai": "RelatorioPatrimonioGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13875,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "RelatorioPatrimonioGrupo",
+          "autorizacaoCodigoPai": "RelatoriosGrupo",
+          "descricao": "Relatório Patrimônio",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13878,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RelatorioJudicialVisualizar",
+              "autorizacaoCodigoPai": "RelatorioJudicialGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13877,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "RelatorioJudicialGrupo",
+          "autorizacaoCodigoPai": "RelatoriosGrupo",
+          "descricao": "Relatório Judicial",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13880,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RelatorioPrestacaoContasVisualizar",
+              "autorizacaoCodigoPai": "RelatorioPrestacaoContasGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13879,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "RelatorioPrestacaoContasGrupo",
+          "autorizacaoCodigoPai": "RelatoriosGrupo",
+          "descricao": "Relatório Prestação de Contas",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "id": 13882,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "RelatorioFiscalizacaoVisualizar",
+              "autorizacaoCodigoPai": "RelatorioFiscalizacaoGrupo",
+              "descricao": "Visualizar",
+              "tipo": 1,
+              "tipoEnum": 1,
+              "autorizacaoRecurso": 1
+            },
+            {
+              "children": [
+                {
+                  "children": [],
+                  "id": 13884,
+                  "usuarioId": 64,
+                  "autorizacaoCodigo": "PropostaFinanceiraVisualizar",
+                  "autorizacaoCodigoPai": "PropostaFinanceira",
+                  "descricao": "Visualizar",
+                  "tipo": 1,
+                  "tipoEnum": 1,
+                  "autorizacaoRecurso": 1
+                }
+              ],
+              "id": 13883,
+              "usuarioId": 64,
+              "autorizacaoCodigo": "PropostaFinanceira",
+              "autorizacaoCodigoPai": "RelatorioFiscalizacaoGrupo",
+              "descricao": "Proposta Financeira",
+              "tipo": 0,
+              "tipoEnum": 0,
+              "autorizacaoRecurso": 1
+            }
+          ],
+          "id": 13881,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "RelatorioFiscalizacaoGrupo",
+          "autorizacaoCodigoPai": "RelatoriosGrupo",
+          "descricao": "Relatório Fiscalização",
+          "tipo": 0,
+          "tipoEnum": 0,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13854,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "RelatoriosGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Relatórios",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "id": 13886,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ExportacaoVisualizar",
+          "autorizacaoCodigoPai": "ExportacaoGrupo",
+          "descricao": "Visualizar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13885,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "ExportacaoGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Exportação",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "id": 13888,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ImportacaoPlanilhaVisualizar",
+          "autorizacaoCodigoPai": "ImportacaoPlanilhaGrupo",
+          "descricao": "Visualizar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13887,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "ImportacaoPlanilhaGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Importação de Planilha",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "id": 13890,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ConfiguracoesVisualizar",
+          "autorizacaoCodigoPai": "ConfiguracoesGrupo",
+          "descricao": "Visualizar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13891,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ConfiguracoesAlterar",
+          "autorizacaoCodigoPai": "ConfiguracoesGrupo",
+          "descricao": "Alterar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13889,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "ConfiguracoesGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Configuração",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "id": 13893,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "MemoriaDeCalculoVisualizar",
+          "autorizacaoCodigoPai": "MemoriaDeCalculoGrupo",
+          "descricao": "Visualizar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13894,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "MemoriaDeCalculoAlterar",
+          "autorizacaoCodigoPai": "MemoriaDeCalculoGrupo",
+          "descricao": "Alterar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13892,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "MemoriaDeCalculoGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Memória de Cálculo",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "id": 13896,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ContaAnaliseContabilVisualizar",
+          "autorizacaoCodigoPai": "ContaAnaliseContabilGrupo",
+          "descricao": "Visualizar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13897,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "ContaAnaliseContabilAlterar",
+          "autorizacaoCodigoPai": "ContaAnaliseContabilGrupo",
+          "descricao": "Alterar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13895,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "ContaAnaliseContabilGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Análise Contábil",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "id": 13899,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "DashboardVisualizar",
+          "autorizacaoCodigoPai": "DashboardGrupo",
+          "descricao": "Visualizar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13898,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "DashboardGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Dashboard",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "id": 13901,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "AutorizacoesVisualizar",
+          "autorizacaoCodigoPai": "AutorizacoesGrupo",
+          "descricao": "Visualizar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13902,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "AutorizacoesAlterar",
+          "autorizacaoCodigoPai": "AutorizacoesGrupo",
+          "descricao": "Alterar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13900,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "AutorizacoesGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Autorizações",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "id": 13904,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "UsuarioAdicionar",
+          "autorizacaoCodigoPai": "UsuarioGrupo",
+          "descricao": "Adicionar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13905,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "UsuarioEditar",
+          "autorizacaoCodigoPai": "UsuarioGrupo",
+          "descricao": "Editar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13906,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "UsuarioBloquear",
+          "autorizacaoCodigoPai": "UsuarioGrupo",
+          "descricao": "Bloquear",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13907,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "UsuarioVisualizar",
+          "autorizacaoCodigoPai": "UsuarioGrupo",
+          "descricao": "Visualizar",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13903,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "UsuarioGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Usuário",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "id": 13911,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "IBRACEDS",
+          "autorizacaoCodigoPai": "UnidadeGrupo",
+          "descricao": "IBRACEDS",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13916,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "BR GAAP",
+          "autorizacaoCodigoPai": "UnidadeGrupo",
+          "descricao": "BR GAAP",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 15029,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "Teste",
+          "autorizacaoCodigoPai": "UnidadeGrupo",
+          "descricao": "Teste",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13910,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "FAESPE",
+          "autorizacaoCodigoPai": "UnidadeGrupo",
+          "descricao": "FAESPE",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13909,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "CENTEDUC",
+          "autorizacaoCodigoPai": "UnidadeGrupo",
+          "descricao": "CENTEDUC",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13915,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "CEGECON",
+          "autorizacaoCodigoPai": "UnidadeGrupo",
+          "descricao": "CEGECON",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13912,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "FUNAPE",
+          "autorizacaoCodigoPai": "UnidadeGrupo",
+          "descricao": "FUNAPE",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13913,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "CEGECON FILIAL",
+          "autorizacaoCodigoPai": "UnidadeGrupo",
+          "descricao": "CEGECON FILIAL",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        },
+        {
+          "children": [],
+          "id": 13914,
+          "usuarioId": 64,
+          "autorizacaoCodigo": "REGER",
+          "autorizacaoCodigoPai": "UnidadeGrupo",
+          "descricao": "REGER",
+          "tipo": 1,
+          "tipoEnum": 1,
+          "autorizacaoRecurso": 1
+        }
+      ],
+      "id": 13908,
+      "usuarioId": 64,
+      "autorizacaoCodigo": "UnidadeGrupo",
+      "autorizacaoCodigoPai": "",
+      "descricao": "Unidades",
+      "tipo": 0,
+      "tipoEnum": 0,
+      "autorizacaoRecurso": 1
+    }
+  ]

@@ -16,7 +16,7 @@
 			<IconTabBar
 				id="idIconTabBar"
 				select=".onFilterSelect"
-				class="sapUiResponsiveContentPadding">
+				class="sapUiNoContentPadding">
 				<items>
 					<IconTabFilter
 						icon="sap-icon://business-card"
@@ -28,22 +28,23 @@
 							defaultPane="default">
 								<l:PaneContainer>
 									<l:SplitPane
-									requiredParentWidth="400" id="default"
+										requiredParentWidth="400" id="default"
 									>
 										<l:layoutData>
 											<l:SplitterLayoutData size="{expandPanel>/sizeSplitter}" minSize="450" />
 										</l:layoutData>
-										<Panel headerText="{i18n>Commom.CadastroPerfilUsuario}">
-											<headerToolbar>
-												<Toolbar>
-													<SearchField  placeholder="{i18n>Commom.ProcurarPerfil}"  width="100%" liveChange="searchUser" showSearchButton="false" />
-													<ToolbarSpacer />
-													<Button width="auto" class="sapUiTinyMarginEnd" icon="sap-icon://sort" type="Transparent"  />
-												</Toolbar>
-											</headerToolbar>
+										<Panel headerText="{i18n>Commom.CadastroPerfilUsuario}">											
 											<List id="list" items="{
 													path: 'PerfilUsuario>/'
 												}">
+												<headerToolbar>
+													<OverflowToolbar>														
+														<SearchField  placeholder="{i18n>Commom.ProcurarPerfil}"  width="50%" />
+														<ToolbarSpacer />
+														<Button width="auto" class="sapUiTinyMarginEnd" icon="sap-icon://sort" type="Transparent"  press="onSortReverse"   />
+														
+													</OverflowToolbar>
+												</headerToolbar>
 												<StandardListItem 
 													press="onProfilePres" 
 													type="Navigation" 
@@ -58,7 +59,7 @@
 											<l:layoutData>
 												<l:SplitterLayoutData size="auto" />
 											</l:layoutData>
-											<Panel visible="{expandPanel>/visiblePanel}" expandAnimation="true" expandable="true" expanded="{expandPanel>/expanded}" headerText="{i18n>Commom.AutorizacaoDoPerfil} {selectedUserModel>/apelido}">
+											<Panel visible="true" expandAnimation="true" expandable="true" expanded="true" headerText="{i18n>Commom.AutorizacaoDoPerfil} {selectedPerfil>/PerfilName}">
 												<table:TreeTable rowHeight="40" id="TreeTable" rows="{
 														path: 'Autorizacoes>/'
 													}" selectionMode="None" enableSelectAll="false" ariaLabelledBy="title">
@@ -131,7 +132,7 @@
 
 																<Button
 																	activeIcon=""
-																	enabled="{= ${selectedUserModel>/administrador} || ${selectedUserModel>/master} || ${selectedUserModel>/super} ? false : true}"
+																	enabled="{= ${selectedPerfil>/administrador} || ${selectedPerfil>/master} || ${selectedPerfil>/super} ? false : true}"
 																	icon="sap-icon://accept"
 																	iconDensityAware="true"
 																	iconFirst="true"
@@ -148,7 +149,7 @@
 																
 																<Text
 																renderWhitespace="false"
-																text="{= ${selectedUserModel>/administrador} || ${selectedUserModel>/master} || ${selectedUserModel>/super} ? ${i18n>app.adminErrorMessage} : ''}"
+																text="{= ${selectedPerfil>/administrador} || ${selectedPerfil>/master} || ${selectedPerfil>/super} ? ${i18n>app.adminErrorMessage} : ''}"
 																textDirection="Inherit"
 																wrapping="true"
 																wrappingType="Normal"									

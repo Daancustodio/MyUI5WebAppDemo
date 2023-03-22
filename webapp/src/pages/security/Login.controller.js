@@ -35,7 +35,7 @@ sap.ui.define(
 			}
 
 			this.setUserSession(this.UserCredentials)
-			this.getRouter().navTo("listaTarefas")
+			this.getRouter().navTo("CadastroPerfilUsuario")
 		},
 
 	});
