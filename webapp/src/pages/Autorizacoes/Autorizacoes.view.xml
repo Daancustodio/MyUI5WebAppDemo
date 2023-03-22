@@ -65,15 +65,15 @@
 													}" selectionMode="None" enableSelectAll="false" ariaLabelledBy="title">
 													<table:extension>
 														<OverflowToolbar height="auto" style="Clear">
-															<Button icon="sap-icon://expand" type="Transparent" tooltip="{i18n>app.expand}" press="onExpandall" />											
-															<Button icon="sap-icon://collapse" type="Transparent" tooltip="{i18n>app.collapse}" press="onCollapseAll" />
+															<Button icon="sap-icon://expand" type="Transparent" tooltip="{i18n>Commom.Expand}" press="onExpandall" />											
+															<Button icon="sap-icon://collapse" type="Transparent" tooltip="{i18n>Commom.Collapse}" press="onCollapseAll" />
 															
 															<MenuButton type="Emphasized" icon="sap-icon://expand-all" width="auto" text="Opções">
 																<menu>
 																	<Menu>
-																		<MenuItem text="{i18n>app.authorizeAll}" icon="sap-icon://message-success" press="onAuthorizeAllPress" />
-																		<MenuItem text="{i18n>app.UnauthorizeAll}" icon="sap-icon://message-error" press="onUnauthorizeAllPress" />
-																		<MenuItem text="{i18n>app.OnlyView}" icon="sap-icon://show" press="onOnlySeePress" />
+																		<MenuItem text="{i18n>Commom.AuthorizeAll}" icon="sap-icon://message-success" press="onAuthorizeAllPress" />
+																		<MenuItem text="{i18n>Commom.UnauthorizeAll}" icon="sap-icon://message-error" press="onUnauthorizeAllPress" />
+																		<MenuItem text="{i18n>Commom.OnlyView}" icon="sap-icon://show" press="onOnlySeePress" />
 																	</Menu>
 																</menu>
 															</MenuButton>
@@ -89,13 +89,13 @@
 													</table:extension>
 													<table:columns>
 														<table:Column hAlign="Begin" width="auto">
-															<Label text="{i18n>app.resource}" />
+															<Label text="{i18n>Commom.Resource}" />
 															<table:template>
 																<Text text="{Autorizacoes>descricao}" wrapping="false" />
 															</table:template>
 														</table:Column>
 														<table:Column hAlign="Begin" width="auto">
-															<Label text="{i18n>app.userAuthorization}" />
+															<Label text="{i18n>Commom.ProfileAuthorization}" />
 															<table:template>
 																<Select id="selectRefresh" type="Default" items="{
 																		path: 'AutorizacaoRecursos>/',
@@ -123,7 +123,7 @@
 																	icon="sap-icon://decline"
 																	iconDensityAware="true"
 																	iconFirst="true"
-																	text="{i18n>app.undo}"
+																	text="{i18n>Commom.Undo}"
 																	textDirection="Inherit"
 																	type="Reject"
 																	width="10em"
@@ -136,7 +136,7 @@
 																	icon="sap-icon://accept"
 																	iconDensityAware="true"
 																	iconFirst="true"
-																	text="{i18n>app.apply}"
+																	text="{i18n>Commom.Apply}"
 																	textDirection="Inherit"
 																	type="Accept"
 																	width="10em"
@@ -149,7 +149,7 @@
 																
 																<Text
 																renderWhitespace="false"
-																text="{= ${selectedPerfil>/administrador} || ${selectedPerfil>/master} || ${selectedPerfil>/super} ? ${i18n>app.adminErrorMessage} : ''}"
+																text="{= ${selectedPerfil>/administrador} || ${selectedPerfil>/master} || ${selectedPerfil>/super} ? ${i18n>Commom.AdminErrorMessage} : ''}"
 																textDirection="Inherit"
 																wrapping="true"
 																wrappingType="Normal"									
@@ -174,7 +174,8 @@
 						iconColor="Positive"
 						
 						text="Usuários"
-						key="Ok" />		
+						key="Ok">
+					</IconTabFilter>		
 					
 				</items>		
 			</IconTabBar>
