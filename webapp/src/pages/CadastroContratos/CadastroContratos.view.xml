@@ -1,0 +1,61 @@
+<mvc:View
+	controllerName="MyUI5WebApp.src.pages.CadastroContratos.CadastroContratos"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"	
+	height="100%">
+	<Page 
+		showNavButton="true" 
+		title="{i18n>Commom.CadastroContratos}" 
+		navButtonPress="onNavBack">
+		
+		<content>		
+			<Table 
+			inset="false"
+			alternateRowColors="true"
+			items="{CadastroContratos>/}">
+			<headerToolbar>
+				<OverflowToolbar>
+					<SearchField  placeholder="{i18n>Commom.FindCadastroContratos}"  width="40%" />
+					<Button  icon="sap-icon://sort"   press=""/>
+					<ToolbarSpacer/>
+					<Button  icon="sap-icon://add" type="Emphasized"   text="{i18n>Commom.New}"  press="onNewPress"/>
+
+				</OverflowToolbar>
+			</headerToolbar>
+			<columns>
+				<Column
+					width="12em">
+					<Text text="{i18n>Commom.Code}" />
+				</Column>
+				<Column
+					minScreenWidth="Tablet"
+					demandPopin="true">
+					<Text text="{i18n>Commom.Description}" />
+				</Column>
+				<Column
+					width="84px" 
+					minScreenWidth="Tablet"
+					demandPopin="true"
+					hAlign="Center">
+					<Text text="{i18n>Commom.Actions}" />
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem vAlign="Middle">
+					<cells>
+						<ObjectIdentifier							
+							 title="{CadastroContratosCode}"/>
+						<Text
+							text="{CadastroContratosDescricao}" />
+						<HBox justifyContent="SpaceBetween" alignContent="SpaceBetween" > 
+							<Button  icon="sap-icon://edit"  press="onNewPress"  type="Default" />
+							<Button  icon="sap-icon://delete" type="Reject"    />
+						</HBox>
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+		</content>	
+	</Page>
+</mvc:View>

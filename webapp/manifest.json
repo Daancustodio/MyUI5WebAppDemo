@@ -95,7 +95,7 @@
           "pattern": "",
           "name": "login",
           "target": "login"
-        },       
+        },
         {
           "pattern": "settings/:userName:",
           "name": "settings",
@@ -110,7 +110,7 @@
           "pattern": "languages",
           "name": "languages",
           "target": "languages"
-        },        
+        },
         {
           "pattern": "CadastroPerfilUsuario",
           "name": "CadastroPerfilUsuario",
@@ -120,10 +120,14 @@
           "pattern": "Autorizacoes",
           "name": "Autorizacoes",
           "target": "Autorizacoes"
+        },
+        {
+          "pattern": "CadastroContratos",
+          "name": "CadastroContratos",
+          "target": "CadastroContratos"
         }
       ],
       "targets": {
-       
         "settings": {
           "viewName": "Edit",
           "viewLevel": 3,
@@ -151,7 +155,7 @@
           "viewName": "Languages",
           "viewLevel": 3,
           "viewPath": "MyUI5WebApp.src.pages.languages"
-        },        
+        },
         "CadastroPerfilUsuario": {
           "viewName": "CadastroPerfilUsuario",
           "viewLevel": 3,
@@ -161,6 +165,11 @@
           "viewName": "Autorizacoes",
           "viewLevel": 3,
           "viewPath": "MyUI5WebApp.src.pages.Autorizacoes"
+        },
+        "CadastroContratos": {
+          "viewName": "CadastroContratos",
+          "viewLevel": 3,
+          "viewPath": "MyUI5WebApp.src.pages.CadastroContratos"
         }
       }
     }

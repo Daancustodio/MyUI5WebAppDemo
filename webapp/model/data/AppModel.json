@@ -5,12 +5,18 @@
       "icon": "sap-icon://key-user-settings",
       "expanded": true,
       "key": "CadastroPerfilUsuario"
-    },    
+    },
     {
       "title": "Commom.Autorizacoes",
       "icon": "sap-icon://locked",
       "expanded": true,
       "key": "Autorizacoes"
+    },
+    {
+      "title": "Commom.CadastroContratos",
+      "icon": "sap-icon://error",
+      "expanded": true,
+      "key": "CadastroContratos"
     }
   ],
   "fixedNavigation": [
