@@ -1,0 +1,34 @@
+[
+    {
+        "Code" : "0001",
+        "Descricao" : "CIDADE TIRADENTES"
+    },
+    {
+        "Code" : "0002",
+        "Descricao" : "VILA MARIA/VILA GUILHERME"
+    },
+    {
+        "Code" : "0003",
+        "Descricao" : "PENHA"
+    },
+    {
+        "Code" : "0004",
+        "Descricao" : "PRINEIROS"
+    },
+    {
+        "Code" : "0005",
+        "Descricao" : "JAÇANÃ/TREMEMBÉ"
+    },
+    {
+        "Code" : "0006",
+        "Descricao" : "CASA VERDE/CACHOEI-RINHA"
+    },
+    {
+        "Code" : "0007",
+        "Descricao" : "VILA MARIANA"
+    },
+    {
+        "Code" : "0008",
+        "Descricao" : "CAMPO LIMPO"
+    }
+]

@@ -125,6 +125,36 @@
           "pattern": "Contratos",
           "name": "Contratos",
           "target": "Contratos"
+        },
+        {
+          "pattern": "TiposContrato",
+          "name": "TiposContrato",
+          "target": "TiposContrato"
+        },
+        {
+          "pattern": "ModalidadesGestao",
+          "name": "ModalidadesGestao",
+          "target": "ModalidadesGestao"
+        },
+        {
+          "pattern": "ModalidadesAtencao",
+          "name": "ModalidadesAtencao",
+          "target": "ModalidadesAtencao"
+        },
+        {
+          "pattern": "SupervisoesTecnica",
+          "name": "SupervisoesTecnica",
+          "target": "SupervisoesTecnica"
+        },
+        {
+          "pattern": "DistritosAdministrativo",
+          "name": "DistritosAdministrativo",
+          "target": "DistritosAdministrativo"
+        },
+        {
+          "pattern": "CoordenadoriasRegionaisSaude",
+          "name": "CoordenadoriasRegionaisSaude",
+          "target": "CoordenadoriasRegionaisSaude"
         }
       ],
       "targets": {
@@ -170,6 +200,36 @@
           "viewName": "Contratos",
           "viewLevel": 3,
           "viewPath": "MyUI5WebApp.src.pages.Contratos"
+        },
+        "TiposContrato": {
+          "viewName": "TiposContrato",
+          "viewLevel": 3,
+          "viewPath": "MyUI5WebApp.src.pages.TiposContrato"
+        },
+        "ModalidadesGestao": {
+          "viewName": "ModalidadesGestao",
+          "viewLevel": 3,
+          "viewPath": "MyUI5WebApp.src.pages.ModalidadesGestao"
+        },
+        "ModalidadesAtencao": {
+          "viewName": "ModalidadesAtencao",
+          "viewLevel": 3,
+          "viewPath": "MyUI5WebApp.src.pages.ModalidadesAtencao"
+        },
+        "SupervisoesTecnica": {
+          "viewName": "SupervisoesTecnica",
+          "viewLevel": 3,
+          "viewPath": "MyUI5WebApp.src.pages.SupervisoesTecnica"
+        },
+        "DistritosAdministrativo": {
+          "viewName": "DistritosAdministrativo",
+          "viewLevel": 3,
+          "viewPath": "MyUI5WebApp.src.pages.DistritosAdministrativo"
+        },
+        "CoordenadoriasRegionaisSaude": {
+          "viewName": "CoordenadoriasRegionaisSaude",
+          "viewLevel": 3,
+          "viewPath": "MyUI5WebApp.src.pages.CoordenadoriasRegionaisSaude"
         }
       }
     }

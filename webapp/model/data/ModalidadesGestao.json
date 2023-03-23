@@ -1,0 +1,18 @@
+[
+    {
+        "Id" : "1",
+        "Descricao" : "Modalidade de Gestão 01"
+    },
+    {
+        "Id" : "2",
+        "Descricao" : "Modalidade de Gestão 02"
+    },
+    {
+        "Id" : "3",
+        "Descricao" : "Modalidade de Gestão 03"
+    },
+    {
+        "Id" : "4",
+        "Descricao" : "Modalidade de Gestão 04"
+    }
+]

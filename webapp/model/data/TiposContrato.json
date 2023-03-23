@@ -1,0 +1,18 @@
+[
+    {
+        "Id" : "1",
+        "Descricao" : "Contrado de gestão"
+    },
+    {
+        "Id" : "2",
+        "Descricao" : "Convênio"
+    },
+    {
+        "Id" : "3",
+        "Descricao" : "Termo de Colaboração"
+    },
+    {
+        "Id" : "4",
+        "Descricao" : "Termo de parceria"
+    }
+]
