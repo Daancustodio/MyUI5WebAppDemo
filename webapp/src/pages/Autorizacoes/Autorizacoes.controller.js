@@ -9,17 +9,24 @@ sap.ui.define(
 		return BaseController.extend("MyUI5WebApp.src.pages.Autorizacoes.Autorizacoes", {
 			onInit : function(){
 				console.log("controller [Autorizacoes] Iniciado");
+				
 				this.PerfilUsuario = this.createLocalRestModel("PerfilUsuario.json");
 				this.PerfilUsuario.get().then(console.log)
 				this.setModel(this.PerfilUsuario, "PerfilUsuario");
 
-				this.Autorizacoes = this.createLocalRestModel("Autorizacoes.json");
+				this.Autorizacoes = this.createLocalRestModel("ArvoreAutorizacaoPerfil.json");
 				this.Autorizacoes.get().then(console.log)
 				this.setModel(this.Autorizacoes, "Autorizacoes");
 
 				this.AutorizacaoRecursos = this.createLocalRestModel("TipoRecursos.json")
 				this.AutorizacaoRecursos.get().then(console.log)
             	this.setModel(this.AutorizacaoRecursos, "AutorizacaoRecursos")
+
+				this.AutorizacoesViewModel = this.createLocalRestModel("AutorizacoeViewModel.json")
+				this.AutorizacoesViewModel.get().then(console.log)
+				this.setModel(this.AutorizacoesViewModel, 'AutorizacoesViewModel');
+
+				this.SelectedProfileModel = new RestModel();
 			},		
 
 			onAfterRendering :  function(){
@@ -46,45 +53,43 @@ sap.ui.define(
 			},
 
 			onSelectProfilePress: async function (oEvent) {
-				let busyControl = oEvent.getSource();
-				let path = oEvent.getSource().getBindingContextPath();
-	
-				if (!vazia(authorizationChangesList)){
-					authorizationChangesList = [];
-				} 
-	
+				let selectedRow = oEvent.getSource();
+				let table = selectedRow.getParent();
+				let bindingInfo = table.getBindingInfo("items");
+				let selectedObject = oEvent.getSource().getBindingContext(bindingInfo.model).getObject();
 				let oTreeTable = this.byId("TreeTable");
 	
-				busyControl.setBusy(true);
+				selectedRow.setBusy(true);
 				oTreeTable.setBusy(true);
-	
-				let selectedUser = this.getModel(LIST_MODEL_REF).getProperty(path);
-				this.selectedUserModel.setData(selectedUser)
-				let pathObterArvore = this.getApiUrl(this.api.USER_AUTHORIZATION_TREE) + "/" + selectedUser.id;
-	
-				this.autorizacoesUserModel
-					.get(pathObterArvore).success(x => {
+
+				this.SelectedProfileModel.setData(selectedObject)
+				this.Autorizacoes
+					.get().then(x => {
 						oTreeTable.setBusy(false);
-						busyControl.setBusy(false);
-						//console.log(x);
-						originalAuthorizationList = JSON.parse(JSON.stringify(x));
-						this.autorizacoesUserModel.setData(x);
+						selectedRow.setBusy(false);
 						this.getModel("expandPanel").setProperty("/sizeSplitter", "65%");
 						this.getModel("expandPanel").setProperty("/visiblePanel", true);
 						setTimeout(() => { this.getModel("expandPanel").setProperty("/expanded", true); }, 1000)
 	
-					}).error((ex) => {
-						this.errorMessageReader(ex)
-						this.showException(ex);
-						busyControl.setBusy(false);
-						oTreeTable.setBusy(false);
-						this.getModel("expandPanel").setProperty("/sizeSplitter", "100%");
-						this.getModel("expandPanel").setProperty("/expanded", false);
-						setTimeout(() => { this.getModel("expandPanel").setProperty("/visiblePanel", false) }, 1000)
-	
-					});
-				this.setModel(new JSONModel(selectedUser), "userSelected");
+					})
+				this.setModel(this.SelectedProfileModel, "SelectedProfileModel");
 				
+			},
+
+			onCollapseAll: function () {
+				let oTreeTable = this.byId("TreeTable");
+				oTreeTable.collapseAll();
+			},
+	
+			onExpandall: function () {
+				let oTreeTable = this.byId("TreeTable");
+				oTreeTable.expandToLevel(4);
+			},
+	
+			onClosePanel: function (){
+				this.getModel("expandPanel").setProperty("/sizeSplitter", "100%");
+				this.getModel("expandPanel").setProperty("/expanded", false);
+				authorizationChangesList = [];
 			},
 
 		});

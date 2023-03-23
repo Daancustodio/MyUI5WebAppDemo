@@ -46,7 +46,7 @@
 													</OverflowToolbar>
 												</headerToolbar>
 												<StandardListItem 
-													press="onProfilePres" 
+													press="onSelectProfilePress" 
 													type="Navigation" 
 													title="{PerfilUsuario>PerfilName}" 
 													description="{PerfilUsuario>Code}" 
@@ -59,7 +59,7 @@
 											<l:layoutData>
 												<l:SplitterLayoutData size="auto" />
 											</l:layoutData>
-											<Panel visible="true" expandAnimation="true" expandable="true" expanded="true" headerText="{i18n>Commom.AutorizacaoDoPerfil} {selectedPerfil>/PerfilName}">
+											<Panel visible="true" expandAnimation="true" expandable="true" expanded="true" headerText="{i18n>Commom.AutorizacaoDoPerfil} {SelectedProfileModel>/PerfilName}">
 												<table:TreeTable rowHeight="40" id="TreeTable" rows="{
 														path: 'Autorizacoes>/'
 													}" selectionMode="None" enableSelectAll="false" ariaLabelledBy="title">
@@ -79,6 +79,7 @@
 															</MenuButton>
 															<ToolbarSpacer />
 															<Button
+																text="{i18n>Commom.Close}" 
 																icon="sap-icon://decline"
 																type="Reject"
 																press="onClosePanel"
