@@ -7,9 +7,5 @@
     {
         "tipo": 1,
         "descricao": "Autorizado"
-    },
-    {
-        "tipo": 2,
-        "descricao": "Parcial"
     }
 ]

@@ -27,19 +27,22 @@
 						<l:ResponsiveSplitter
 							defaultPane="default">
 								<l:PaneContainer>
-									<l:SplitPane
-										requiredParentWidth="400" id="default"
-									>
+									<l:SplitPane requiredParentWidth="400">
 										<l:layoutData>
-											<l:SplitterLayoutData size="{expandPanel>/sizeSplitter}" minSize="450" />
+											<l:SplitterLayoutData size="{AutorizacoesViewModel>/sizeSplitter}" minSize="450" />
 										</l:layoutData>
-										<Panel headerText="{i18n>Commom.CadastroPerfilUsuario}">											
+										<Panel>	
+											<headerToolbar>
+												<OverflowToolbar>														
+													<Label text="{i18n>Commom.AutorizacoesPorPerfil}"/>
+												</OverflowToolbar>
+											</headerToolbar>										
 											<List id="list" items="{
 													path: 'PerfilUsuario>/'
 												}">
 												<headerToolbar>
 													<OverflowToolbar>														
-														<SearchField  placeholder="{i18n>Commom.ProcurarPerfil}"  width="50%" />
+														<SearchField  placeholder="{i18n>Commom.ProcurarPerfil}"  width="45%" />
 														<ToolbarSpacer />
 														<Button width="auto" class="sapUiTinyMarginEnd" icon="sap-icon://sort" type="Transparent"  press="onSortReverse"   />
 														
@@ -59,8 +62,18 @@
 											<l:layoutData>
 												<l:SplitterLayoutData size="auto" />
 											</l:layoutData>
-											<Panel visible="true" expandAnimation="true" expandable="true" expanded="true" headerText="{i18n>Commom.AutorizacaoDoPerfil} {SelectedProfileModel>/PerfilName}">
-												<table:TreeTable rowHeight="40" id="TreeTable" rows="{
+											<Panel 
+												visible="true" 
+												expandAnimation="true" 
+												expandable="true" 
+												expanded="{AutorizacoesViewModel>/expanded}">
+												<headerToolbar>
+													<OverflowToolbar>														
+														<Label text="{i18n>Commom.PermissoesDoPerfil}"/>
+														<Label design="Bold" text=" {SelectedProfileModel>/PerfilName}"/>
+													</OverflowToolbar>
+												</headerToolbar>
+												<table:TreeTable rowHeight="40" id="TreeTableProfile" rows="{
 														path: 'Autorizacoes>/'
 													}" selectionMode="None" enableSelectAll="false" ariaLabelledBy="title">
 													<table:extension>
@@ -98,7 +111,7 @@
 														<table:Column hAlign="Begin" width="auto">
 															<Label text="{i18n>Commom.ProfileAuthorization}" />
 															<table:template>
-																<Select id="selectRefresh" type="Default" items="{
+																<Select  type="Default" items="{
 																		path: 'AutorizacaoRecursos>/',
 																		templateShareable: false
 																	}" selectedKey="{
@@ -149,11 +162,11 @@
 															>
 																
 																<Text
-																renderWhitespace="false"
-																text="{= ${selectedPerfil>/administrador} || ${selectedPerfil>/master} || ${selectedPerfil>/super} ? ${i18n>Commom.AdminErrorMessage} : ''}"
-																textDirection="Inherit"
-																wrapping="true"
-																wrappingType="Normal"									
+																	renderWhitespace="false"
+																	text="{= ${selectedPerfil>/administrador} || ${selectedPerfil>/master} || ${selectedPerfil>/super} ? ${i18n>Commom.AdminErrorMessage} : ''}"
+																	textDirection="Inherit"
+																	wrapping="true"
+																	wrappingType="Normal"									
 																/>
 															</HBox>
 													
@@ -176,6 +189,171 @@
 						
 						text="Usuários"
 						key="Ok">
+
+						<l:ResponsiveSplitter
+							defaultPane="default">
+								<l:PaneContainer>
+									<l:SplitPane requiredParentWidth="400">
+										<l:layoutData>
+											<l:SplitterLayoutData size="{AutorizacoesViewModel>/sizeSplitter}" minSize="450" />
+										</l:layoutData>
+										<Panel>	
+											<headerToolbar>
+												<OverflowToolbar>														
+													<Label text="{i18n>Commom.AutorizacoesPorUsuario}"/>
+												</OverflowToolbar>
+											</headerToolbar>										
+											<List items="{
+													path: 'Usuarios>/'
+												}">
+												<headerToolbar>
+													<OverflowToolbar>														
+														<SearchField  placeholder="{i18n>Commom.ProcurarUsuario}"  width="45%" />
+														<ToolbarSpacer />
+														<Button width="auto" class="sapUiTinyMarginEnd" icon="sap-icon://sort" type="Transparent"  press="onSortReverse"   />
+														
+													</OverflowToolbar>
+												</headerToolbar>
+												<StandardListItem 
+													press="onSelectUserPress" 
+													type="Navigation" 
+													title="{Usuarios>nomeCompleto}" 
+													info="{Usuarios>email}"
+													description="{Usuarios>id}" 
+													icon="sap-icon://employee" />
+											</List>
+										</Panel>
+									</l:SplitPane>
+									<l:PaneContainer orientation="Horizontal">
+										<l:SplitPane requiredParentWidth="800">
+											<l:layoutData>
+												<l:SplitterLayoutData size="auto" />
+											</l:layoutData>
+											<Panel 
+
+												visible="true" 
+												expandAnimation="true" 
+												expandable="true" 
+												expanded="{AutorizacoesViewModel>/expanded}">
+												<headerToolbar>
+													<OverflowToolbar>														
+														<Label text="{i18n>Commom.PermissoesDoUsuario}"/>
+														<Label design="Bold" text="{SelectedUserModel>/nomeCompleto}"/>
+													</OverflowToolbar>
+												</headerToolbar>
+												<content>
+													<table:TreeTable rowHeight="40" id="TreeTableUsuario" rows="{
+															path: 'Autorizacoes>/'
+														}" selectionMode="None" enableSelectAll="false" ariaLabelledBy="title">
+														<table:extension>
+															<OverflowToolbar height="auto" style="Clear">
+																<Button icon="sap-icon://expand" type="Transparent" tooltip="{i18n>Commom.Expand}" press="onExpandall" />											
+																<Button icon="sap-icon://collapse" type="Transparent" tooltip="{i18n>Commom.Collapse}" press="onCollapseAll" />
+																
+																<MenuButton type="Emphasized" icon="sap-icon://expand-all" width="auto" text="Opções">
+																	<menu>
+																		<Menu>
+																			<MenuItem text="{i18n>Commom.AuthorizeAll}" icon="sap-icon://message-success" press="onAuthorizeAllPress" />
+																			<MenuItem text="{i18n>Commom.UnauthorizeAll}" icon="sap-icon://message-error" press="onUnauthorizeAllPress" />
+																			<MenuItem text="{i18n>Commom.OnlyView}" icon="sap-icon://show" press="onOnlySeePress" />
+																		</Menu>
+																	</menu>
+																</MenuButton>
+																<ToolbarSpacer />
+																<Button
+																	text="{i18n>Commom.Close}" 
+																	icon="sap-icon://decline"
+																	type="Reject"
+																	press="onClosePanel"
+																>
+																	
+																</Button>
+															</OverflowToolbar>
+														</table:extension>
+														<table:columns>
+															<table:Column hAlign="Begin" width="auto">
+																<Label text="{i18n>Commom.Resource}" />
+																<table:template>
+																	<Text text="{Autorizacoes>descricao}" wrapping="false" />
+																</table:template>
+															</table:Column>
+															<table:Column hAlign="Begin" width="auto">
+																<Label text="{i18n>Commom.ProfileAuthorization}" />
+																<table:template>
+																	<Select  type="Default" items="{
+																			path: 'AutorizacaoRecursos>/',
+																			templateShareable: false
+																		}" selectedKey="{
+																			path: 'Autorizacoes>autorizacaoRecurso',
+																			formatOptions: {
+																				type: 'sap.ui.model.type.Integer'
+																			}
+																		}" visible="{= !!${Autorizacoes>tipo}}" forceSelection="false" change="onUserAutorizacaoChange">
+																		<c:Item key="{AutorizacaoRecursos>tipo}" text="{AutorizacaoRecursos>descricao}" />
+																	</Select>
+																</table:template>
+															</table:Column>
+														</table:columns>
+														<table:footer>
+															<VBox
+															>
+																<HBox justifyContent="SpaceAround" class="sapUiTinyMargin"
+																>
+																	<Button
+																		activeIcon=""
+																		ariaHasPopup="None"
+																		enabled="true"
+																		icon="sap-icon://decline"
+																		iconDensityAware="true"
+																		iconFirst="true"
+																		text="{i18n>Commom.Undo}"
+																		textDirection="Inherit"
+																		type="Reject"
+																		width="10em"
+																		press="onUndoPress"
+																	/>
+
+																	<Button
+																		activeIcon=""
+																		enabled="{= ${selectedPerfil>/administrador} || ${selectedPerfil>/master} || ${selectedPerfil>/super} ? false : true}"
+																		icon="sap-icon://accept"
+																		iconDensityAware="true"
+																		iconFirst="true"
+																		text="{i18n>Commom.Apply}"
+																		textDirection="Inherit"
+																		type="Accept"
+																		width="10em"
+																		press="onApplyPress"
+																	/>
+																</HBox>
+
+																<HBox justifyContent="Center" class="sapUiTinyMargin"
+																>
+																	
+																	<Text
+																	renderWhitespace="false"
+																	text="{= ${selectedPerfil>/administrador} || ${selectedPerfil>/master} || ${selectedPerfil>/super} ? ${i18n>Commom.AdminErrorMessage} : ''}"
+																	textDirection="Inherit"
+																	wrapping="true"
+																	wrappingType="Normal"									
+																	/>
+																</HBox>
+														
+															</VBox>
+															
+															
+																
+
+														</table:footer>
+													</table:TreeTable>
+												</content>
+
+											</Panel>
+										</l:SplitPane>
+									</l:PaneContainer>
+								</l:PaneContainer>
+						</l:ResponsiveSplitter>
+
 					</IconTabFilter>		
 					
 				</items>		

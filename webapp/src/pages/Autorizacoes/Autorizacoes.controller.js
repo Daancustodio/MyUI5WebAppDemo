@@ -13,6 +13,10 @@ sap.ui.define(
 				this.PerfilUsuario = this.createLocalRestModel("PerfilUsuario.json");
 				this.PerfilUsuario.get().then(console.log)
 				this.setModel(this.PerfilUsuario, "PerfilUsuario");
+				
+				this.Usuarios = this.createLocalRestModel("Usuarios.json");
+				this.Usuarios.get().then(console.log)
+				this.setModel(this.Usuarios, "Usuarios");
 
 				this.Autorizacoes = this.createLocalRestModel("ArvoreAutorizacaoPerfil.json");
 				this.Autorizacoes.get().then(console.log)
@@ -27,6 +31,7 @@ sap.ui.define(
 				this.setModel(this.AutorizacoesViewModel, 'AutorizacoesViewModel');
 
 				this.SelectedProfileModel = new RestModel();
+				this.SelectedUserModel = new RestModel();
 			},		
 
 			onAfterRendering :  function(){
@@ -57,7 +62,7 @@ sap.ui.define(
 				let table = selectedRow.getParent();
 				let bindingInfo = table.getBindingInfo("items");
 				let selectedObject = oEvent.getSource().getBindingContext(bindingInfo.model).getObject();
-				let oTreeTable = this.byId("TreeTable");
+				let oTreeTable = this.byId("TreeTableProfile");
 	
 				selectedRow.setBusy(true);
 				oTreeTable.setBusy(true);
@@ -67,29 +72,51 @@ sap.ui.define(
 					.get().then(x => {
 						oTreeTable.setBusy(false);
 						selectedRow.setBusy(false);
-						this.getModel("expandPanel").setProperty("/sizeSplitter", "65%");
-						this.getModel("expandPanel").setProperty("/visiblePanel", true);
-						setTimeout(() => { this.getModel("expandPanel").setProperty("/expanded", true); }, 1000)
+						this.AutorizacoesViewModel.setProperty("/sizeSplitter", "50%");
+						this.AutorizacoesViewModel.setProperty("/visiblePanel", true);
+						setTimeout(() => { this.AutorizacoesViewModel.setProperty("/expanded", true); }, 500)
 	
 					})
 				this.setModel(this.SelectedProfileModel, "SelectedProfileModel");
 				
 			},
+			onSelectUserPress: async function (oEvent) {
+				let selectedRow = oEvent.getSource();
+				let table = selectedRow.getParent();
+				let bindingInfo = table.getBindingInfo("items");
+				let selectedObject = oEvent.getSource().getBindingContext(bindingInfo.model).getObject();
+				let oTreeTable = this.byId("TreeTableUsuario");
+	
+				selectedRow.setBusy(true);
+				oTreeTable.setBusy(true);
+
+				this.SelectedUserModel.setData(selectedObject)
+				this.Autorizacoes
+					.get().then(x => {
+						oTreeTable.setBusy(false);
+						selectedRow.setBusy(false);
+						this.AutorizacoesViewModel.setProperty("/sizeSplitter", "50%");
+						this.AutorizacoesViewModel.setProperty("/visiblePanel", true);
+						setTimeout(() => { this.AutorizacoesViewModel.setProperty("/expanded", true); }, 500)
+	
+					})
+				this.setModel(this.SelectedUserModel, "SelectedUserModel");
+				
+			},
 
 			onCollapseAll: function () {
-				let oTreeTable = this.byId("TreeTable");
+				let oTreeTable = this.byId("TreeTableProfile");
 				oTreeTable.collapseAll();
 			},
 	
 			onExpandall: function () {
-				let oTreeTable = this.byId("TreeTable");
+				let oTreeTable = this.byId("TreeTableProfile");
 				oTreeTable.expandToLevel(4);
 			},
 	
 			onClosePanel: function (){
-				this.getModel("expandPanel").setProperty("/sizeSplitter", "100%");
-				this.getModel("expandPanel").setProperty("/expanded", false);
-				authorizationChangesList = [];
+				this.AutorizacoesViewModel.setProperty("/sizeSplitter", "100%");
+				this.AutorizacoesViewModel.setProperty("/expanded", false);
 			},
 
 		});
