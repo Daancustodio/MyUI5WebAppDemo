@@ -27,22 +27,18 @@ sap.ui.define(
 			},	
 
 			onNewPress(oEvent){
-                if(!this._oNewModalidadesGestaoFragment){
-					this._oNewModalidadesGestaoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.ModalidadesGestao.ModalidadesGestao", this);
-					this.getView().addDependent(this._oNewModalidadesGestaoFragment);
-					this._oNewModalidadesGestaoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewModalidadesGestaoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.ModalidadesGestao.ModalidadesGestao", this);
+				this.getView().addDependent(this._oNewModalidadesGestaoFragment);
+				this._oNewModalidadesGestaoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 
 				this._oNewModalidadesGestaoFragment.setModel(new RestModel())
 				this._oNewModalidadesGestaoFragment.open()
 			},
 
 			onEditPress(oEvent){
-                if(!this._oNewModalidadesGestaoFragment){
-					this._oNewModalidadesGestaoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.ModalidadesGestao.ModalidadesGestao", this);
-					this.getView().addDependent(this._oNewModalidadesGestaoFragment);
-					this._oNewModalidadesGestaoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewModalidadesGestaoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.ModalidadesGestao.ModalidadesGestao", this);
+				this.getView().addDependent(this._oNewModalidadesGestaoFragment);
+				this._oNewModalidadesGestaoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 				
 				let selectedRow = oEvent.getSource().getParent().getParent();
 				let table = selectedRow.getParent();

@@ -27,22 +27,18 @@ sap.ui.define(
 			},	
 
 			onNewPress(oEvent){
-                if(!this._oNewCoordenadoriasRegionaisSaudeFragment){
-					this._oNewCoordenadoriasRegionaisSaudeFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.CoordenadoriasRegionaisSaude.CoordenadoriasRegionaisSaude", this);
-					this.getView().addDependent(this._oNewCoordenadoriasRegionaisSaudeFragment);
-					this._oNewCoordenadoriasRegionaisSaudeFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewCoordenadoriasRegionaisSaudeFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.CoordenadoriasRegionaisSaude.CoordenadoriasRegionaisSaude", this);
+				this.getView().addDependent(this._oNewCoordenadoriasRegionaisSaudeFragment);
+				this._oNewCoordenadoriasRegionaisSaudeFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 
 				this._oNewCoordenadoriasRegionaisSaudeFragment.setModel(new RestModel())
 				this._oNewCoordenadoriasRegionaisSaudeFragment.open()
 			},
 
 			onEditPress(oEvent){
-                if(!this._oNewCoordenadoriasRegionaisSaudeFragment){
-					this._oNewCoordenadoriasRegionaisSaudeFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.CoordenadoriasRegionaisSaude.CoordenadoriasRegionaisSaude", this);
-					this.getView().addDependent(this._oNewCoordenadoriasRegionaisSaudeFragment);
-					this._oNewCoordenadoriasRegionaisSaudeFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewCoordenadoriasRegionaisSaudeFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.CoordenadoriasRegionaisSaude.CoordenadoriasRegionaisSaude", this);
+				this.getView().addDependent(this._oNewCoordenadoriasRegionaisSaudeFragment);
+				this._oNewCoordenadoriasRegionaisSaudeFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 				
 				let selectedRow = oEvent.getSource().getParent().getParent();
 				let table = selectedRow.getParent();

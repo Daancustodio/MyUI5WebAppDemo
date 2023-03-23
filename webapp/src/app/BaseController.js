@@ -144,7 +144,9 @@ sap.ui.define([
 		},
 
 		closeDialog(oEvent){
-			oEvent.getSource().getParent().getParent().close()
+			let dialog= oEvent.getSource().getParent().getParent();
+			dialog.close()
+			dialog.destroy()
 		},
 		onSortReverse(oEvent){
 			let table = oEvent.getSource().getParent().getParent();

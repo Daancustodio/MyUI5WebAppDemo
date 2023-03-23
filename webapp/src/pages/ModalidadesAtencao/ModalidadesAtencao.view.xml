@@ -45,7 +45,7 @@
 				<ColumnListItem vAlign="Middle">
 					<cells>
 						<ObjectIdentifier							
-							 title="{ModalidadesAtencao>Id}"/>
+							 title="{ModalidadesAtencao>Code}"/>
 						<Text
 							text="{ModalidadesAtencao>Descricao}" />
 						<HBox justifyContent="SpaceBetween" alignContent="SpaceBetween" > 

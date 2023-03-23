@@ -27,22 +27,18 @@ sap.ui.define(
 			},	
 
 			onNewPress(oEvent){
-                if(!this._oNewDistritosAdministrativoFragment){
-					this._oNewDistritosAdministrativoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.DistritosAdministrativo.DistritosAdministrativo", this);
-					this.getView().addDependent(this._oNewDistritosAdministrativoFragment);
-					this._oNewDistritosAdministrativoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewDistritosAdministrativoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.DistritosAdministrativo.DistritosAdministrativo", this);
+				this.getView().addDependent(this._oNewDistritosAdministrativoFragment);
+				this._oNewDistritosAdministrativoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 
 				this._oNewDistritosAdministrativoFragment.setModel(new RestModel())
 				this._oNewDistritosAdministrativoFragment.open()
 			},
 
 			onEditPress(oEvent){
-                if(!this._oNewDistritosAdministrativoFragment){
-					this._oNewDistritosAdministrativoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.DistritosAdministrativo.DistritosAdministrativo", this);
-					this.getView().addDependent(this._oNewDistritosAdministrativoFragment);
-					this._oNewDistritosAdministrativoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewDistritosAdministrativoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.DistritosAdministrativo.DistritosAdministrativo", this);
+				this.getView().addDependent(this._oNewDistritosAdministrativoFragment);
+				this._oNewDistritosAdministrativoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 				
 				let selectedRow = oEvent.getSource().getParent().getParent();
 				let table = selectedRow.getParent();

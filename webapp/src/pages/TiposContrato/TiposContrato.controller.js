@@ -27,22 +27,18 @@ sap.ui.define(
 			},	
 
 			onNewPress(oEvent){
-                if(!this._oNewTiposContratoFragment){
-					this._oNewTiposContratoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.TiposContrato.TiposContrato", this);
-					this.getView().addDependent(this._oNewTiposContratoFragment);
-					this._oNewTiposContratoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewTiposContratoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.TiposContrato.TiposContrato", this);
+				this.getView().addDependent(this._oNewTiposContratoFragment);
+				this._oNewTiposContratoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 
 				this._oNewTiposContratoFragment.setModel(new RestModel())
 				this._oNewTiposContratoFragment.open()
 			},
 
 			onEditPress(oEvent){
-                if(!this._oNewTiposContratoFragment){
-					this._oNewTiposContratoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.TiposContrato.TiposContrato", this);
-					this.getView().addDependent(this._oNewTiposContratoFragment);
-					this._oNewTiposContratoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewTiposContratoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.TiposContrato.TiposContrato", this);
+				this.getView().addDependent(this._oNewTiposContratoFragment);
+				this._oNewTiposContratoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 				
 				let selectedRow = oEvent.getSource().getParent().getParent();
 				let table = selectedRow.getParent();

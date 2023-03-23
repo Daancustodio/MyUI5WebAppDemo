@@ -27,22 +27,19 @@ sap.ui.define(
 			},	
 
 			onNewPress(oEvent){
-                if(!this._oNewModalidadesAtencaoFragment){
-					this._oNewModalidadesAtencaoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.ModalidadesAtencao.ModalidadesAtencao", this);
-					this.getView().addDependent(this._oNewModalidadesAtencaoFragment);
-					this._oNewModalidadesAtencaoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+                
+				this._oNewModalidadesAtencaoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.ModalidadesAtencao.ModalidadesAtencao", this);
+				this.getView().addDependent(this._oNewModalidadesAtencaoFragment);
+				this._oNewModalidadesAtencaoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 
 				this._oNewModalidadesAtencaoFragment.setModel(new RestModel())
 				this._oNewModalidadesAtencaoFragment.open()
 			},
 
 			onEditPress(oEvent){
-                if(!this._oNewModalidadesAtencaoFragment){
-					this._oNewModalidadesAtencaoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.ModalidadesAtencao.ModalidadesAtencao", this);
-					this.getView().addDependent(this._oNewModalidadesAtencaoFragment);
-					this._oNewModalidadesAtencaoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewModalidadesAtencaoFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.ModalidadesAtencao.ModalidadesAtencao", this);
+				this.getView().addDependent(this._oNewModalidadesAtencaoFragment);
+				this._oNewModalidadesAtencaoFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 				
 				let selectedRow = oEvent.getSource().getParent().getParent();
 				let table = selectedRow.getParent();

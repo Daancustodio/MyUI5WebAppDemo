@@ -27,22 +27,18 @@ sap.ui.define(
 			},	
 
 			onNewPress(oEvent){
-                if(!this._oNewContratosFragment){
-					this._oNewContratosFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.Contratos.Contratos", this);
-					this.getView().addDependent(this._oNewContratosFragment);
-					this._oNewContratosFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewContratosFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.Contratos.Contratos", this);
+				this.getView().addDependent(this._oNewContratosFragment);
+				this._oNewContratosFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 				
 				this._oNewContratosFragment.setModel(new RestModel())
 				this._oNewContratosFragment.open()
 
 			},
 			onEditPress(oEvent){
-                if(!this._oNewContratosFragment){
-					this._oNewContratosFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.Contratos.Contratos", this);
-					this.getView().addDependent(this._oNewContratosFragment);
-					this._oNewContratosFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewContratosFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.Contratos.Contratos", this);
+				this.getView().addDependent(this._oNewContratosFragment);
+				this._oNewContratosFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 				let table = oEvent.getSource().getParent().getParent().getParent();
 				let selectedRow = oEvent.getSource().getParent().getParent();
 				let bindingInfo = table.getBindingInfo("items")

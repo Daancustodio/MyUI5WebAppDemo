@@ -27,22 +27,18 @@ sap.ui.define(
 			},	
 
 			onNewPress(oEvent){
-                if(!this._oNewSupervisoesTecnicaFragment){
-					this._oNewSupervisoesTecnicaFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.SupervisoesTecnica.SupervisoesTecnica", this);
-					this.getView().addDependent(this._oNewSupervisoesTecnicaFragment);
-					this._oNewSupervisoesTecnicaFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewSupervisoesTecnicaFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.SupervisoesTecnica.SupervisoesTecnica", this);
+				this.getView().addDependent(this._oNewSupervisoesTecnicaFragment);
+				this._oNewSupervisoesTecnicaFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 
 				this._oNewSupervisoesTecnicaFragment.setModel(new RestModel())
 				this._oNewSupervisoesTecnicaFragment.open()
 			},
 
 			onEditPress(oEvent){
-                if(!this._oNewSupervisoesTecnicaFragment){
-					this._oNewSupervisoesTecnicaFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.SupervisoesTecnica.SupervisoesTecnica", this);
-					this.getView().addDependent(this._oNewSupervisoesTecnicaFragment);
-					this._oNewSupervisoesTecnicaFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewSupervisoesTecnicaFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.SupervisoesTecnica.SupervisoesTecnica", this);
+				this.getView().addDependent(this._oNewSupervisoesTecnicaFragment);
+				this._oNewSupervisoesTecnicaFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 				
 				let selectedRow = oEvent.getSource().getParent().getParent();
 				let table = selectedRow.getParent();
