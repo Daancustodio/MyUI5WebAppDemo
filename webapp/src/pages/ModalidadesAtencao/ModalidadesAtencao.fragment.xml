@@ -6,7 +6,7 @@
 		title="{i18n>Commom.ModalidadesAtencao}">
 		<content>
 			<VBox class="sapUiSmallMargin" >			
-				<Label text="{i18n>Commom.ModalidadesAtencao}" />
+				<Label text="{i18n>Commom.Descricao}" />
 				<Input value="{/Descricao}" required="true" placeholder="{i18n>Commom.InserirNovaModalidadeAtencao}" />
 			</VBox>
 			

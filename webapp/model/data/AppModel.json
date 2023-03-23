@@ -20,37 +20,37 @@
     },
     {
       "title": "Commom.TiposContrato",
-      "icon": "sap-icon://error",
+      "icon": "sap-icon://tags",
       "expanded": true,
       "key": "TiposContrato"
     },
     {
       "title": "Commom.ModalidadesGestao",
-      "icon": "sap-icon://error",
+      "icon": "sap-icon://program-triangles",
       "expanded": true,
       "key": "ModalidadesGestao"
     },
     {
       "title": "Commom.ModalidadesAtencao",
-      "icon": "sap-icon://error",
+      "icon": "sap-icon://project-definition-triangle",
       "expanded": true,
       "key": "ModalidadesAtencao"
     },
     {
       "title": "Commom.SupervisoesTecnica",
-      "icon": "sap-icon://error",
+      "icon": "sap-icon://official-service",
       "expanded": true,
       "key": "SupervisoesTecnica"
     },
     {
       "title": "Commom.DistritosAdministrativo",
-      "icon": "sap-icon://error",
+      "icon": "sap-icon://factory",
       "expanded": true,
       "key": "DistritosAdministrativo"
     },
     {
       "title": "Commom.CoordenadoriasRegionaisSaude",
-      "icon": "sap-icon://error",
+      "icon": "sap-icon://tree",
       "expanded": true,
       "key": "CoordenadoriasRegionaisSaude"
     }

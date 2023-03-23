@@ -7,7 +7,7 @@
 		title="{i18n>Commom.Contratos}">
 		<content>
 			<VBox class="sapUiSmallMargin" >			
-				<Label text="{i18n>Commom.Contratos}" />
+				<Label text="{i18n>Commom.Descricao}" />
 				<Input  value="{/Descricao}"  required="true" placeholder="Inserir Contratos" />
 			</VBox>
 			

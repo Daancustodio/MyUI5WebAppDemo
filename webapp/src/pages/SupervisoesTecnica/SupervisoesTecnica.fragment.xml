@@ -6,7 +6,7 @@
 		title="{i18n>Commom.SupervisoesTecnica}">
 		<content>
 			<VBox class="sapUiSmallMargin" >			
-				<Label text="{i18n>Commom.SupervisoesTecnica}" />
+				<Label text="{i18n>Commom.Descricao}" />
 				<Input value="{/Descricao}" required="true" placeholder="{i18n>Commm.InserirNovaSupervisaoTecnica}" />
 			</VBox>
 			
