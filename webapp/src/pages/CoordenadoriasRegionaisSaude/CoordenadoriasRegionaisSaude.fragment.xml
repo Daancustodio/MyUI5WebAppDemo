@@ -6,14 +6,14 @@
 		title="{i18n>Commom.CoordenadoriasRegionaisSaude}">
 		<content>
 			<VBox class="sapUiSmallMargin" >			
-				<Label text="{i18n>Commom.CoordenadoriasRegionaisSaude}" />
-				<Input value="{/Descricao}" required="true" placeholder="Inserir CoordenadoriasRegionaisSaude" />
+				<Label text="{i18n>Commom.Descricao}" />
+				<Input value="{/Descricao}" required="true" placeholder="{i18n>Commom.InserirCoordenadoriasRegionaisSaude}" />
 			</VBox>
 			
 		</content>
 		<footer>
 			<Toolbar>
-				<content>	//
+				<content>
 					<ToolbarSpacer></ToolbarSpacer>			
 					<Button type="Accept"
 							text="{i18n>Commom.Save}"

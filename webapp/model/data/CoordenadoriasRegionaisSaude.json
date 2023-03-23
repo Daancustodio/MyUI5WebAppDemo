@@ -1,0 +1,22 @@
+[
+    {
+        "Code" : "0001",
+        "Descricao" : "COORDENADORIA REGIONAL DE SAÚDE CENTRO",
+        "usuarioId": 64
+    },
+    {
+        "Code" : "0002",
+        "Descricao" : "COORDENADORIA REGIONAL DE SAÚDE OESTE",
+        "usuarioId": 64
+    },
+    {
+        "Code" : "0003",
+        "Descricao" : "COORDENADORIA REGIONAL DE SAÚDE LESTE",
+        "usuarioId": 64
+    },
+    {
+        "Code" : "0004",
+        "Descricao" : "COORDENADORIA REGIONAL DE SAÚDE NORTE",
+        "usuarioId": 64
+    }
+]
