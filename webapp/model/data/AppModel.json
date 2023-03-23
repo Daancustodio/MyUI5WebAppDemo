@@ -13,10 +13,10 @@
       "key": "Autorizacoes"
     },
     {
-      "title": "Commom.CadastroContratos",
-      "icon": "sap-icon://error",
+      "title": "Commom.Contratos",
+      "icon": "sap-icon://documents",
       "expanded": true,
-      "key": "CadastroContratos"
+      "key": "Contratos"
     }
   ],
   "fixedNavigation": [

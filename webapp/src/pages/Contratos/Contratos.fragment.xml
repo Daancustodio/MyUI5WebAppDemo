@@ -1,0 +1,32 @@
+<core:FragmentDefinition 
+	xmlns:core="sap.ui.core" 
+	xmlns="sap.m">
+	
+	<Dialog	
+		 stretch="true" 
+		title="{i18n>Commom.Contratos}">
+		<content>
+			<VBox class="sapUiSmallMargin" >			
+				<Label text="{i18n>Commom.Contratos}" />
+				<Input  value="{/Descricao}"  required="true" placeholder="Inserir Contratos" />
+			</VBox>
+			
+		</content>
+		<footer>
+			<Toolbar>
+				<content>	
+					<ToolbarSpacer></ToolbarSpacer>			
+					<Button type="Accept"
+							text="{i18n>Commom.Save}"
+							press=".closeDialog" />
+					<Button id="Reject"
+						text="{i18n>Commom.Cancel}"
+						type="Reject"
+						press=".closeDialog"
+						/>
+				</content>
+			</Toolbar>
+		</footer>
+	</Dialog>
+	
+</core:FragmentDefinition>

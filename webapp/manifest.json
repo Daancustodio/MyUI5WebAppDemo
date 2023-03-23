@@ -122,9 +122,9 @@
           "target": "Autorizacoes"
         },
         {
-          "pattern": "CadastroContratos",
-          "name": "CadastroContratos",
-          "target": "CadastroContratos"
+          "pattern": "Contratos",
+          "name": "Contratos",
+          "target": "Contratos"
         }
       ],
       "targets": {
@@ -166,10 +166,10 @@
           "viewLevel": 3,
           "viewPath": "MyUI5WebApp.src.pages.Autorizacoes"
         },
-        "CadastroContratos": {
-          "viewName": "CadastroContratos",
+        "Contratos": {
+          "viewName": "Contratos",
           "viewLevel": 3,
-          "viewPath": "MyUI5WebApp.src.pages.CadastroContratos"
+          "viewPath": "MyUI5WebApp.src.pages.Contratos"
         }
       }
     }
