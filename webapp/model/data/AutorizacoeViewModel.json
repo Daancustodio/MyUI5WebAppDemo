@@ -1,5 +1,12 @@
 {
-    "expanded": false,
-    "visiblePanel": false,
-    "sizeSplitter": "100%"
+    "perfil": {
+        "expanded": false,
+        "visiblePanel": false,
+        "sizeSplitter": "100%"
+    },
+    "usuario": {
+        "expanded": false,
+        "visiblePanel": false,
+        "sizeSplitter": "100%"
+    }
 }

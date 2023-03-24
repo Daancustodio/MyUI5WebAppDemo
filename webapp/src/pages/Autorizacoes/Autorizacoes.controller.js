@@ -72,9 +72,9 @@ sap.ui.define(
 					.get().then(x => {
 						oTreeTable.setBusy(false);
 						selectedRow.setBusy(false);
-						this.AutorizacoesViewModel.setProperty("/sizeSplitter", "50%");
-						this.AutorizacoesViewModel.setProperty("/visiblePanel", true);
-						setTimeout(() => { this.AutorizacoesViewModel.setProperty("/expanded", true); }, 500)
+						this.AutorizacoesViewModel.setProperty("/perfil/sizeSplitter", "50%");
+						this.AutorizacoesViewModel.setProperty("/perfil/visiblePanel", true);
+						setTimeout(() => { this.AutorizacoesViewModel.setProperty("/perfil/expanded", true); }, 500)
 	
 					})
 				this.setModel(this.SelectedProfileModel, "SelectedProfileModel");
@@ -95,9 +95,9 @@ sap.ui.define(
 					.get().then(x => {
 						oTreeTable.setBusy(false);
 						selectedRow.setBusy(false);
-						this.AutorizacoesViewModel.setProperty("/sizeSplitter", "50%");
-						this.AutorizacoesViewModel.setProperty("/visiblePanel", true);
-						setTimeout(() => { this.AutorizacoesViewModel.setProperty("/expanded", true); }, 500)
+						this.AutorizacoesViewModel.setProperty("/usuario/sizeSplitter", "50%");
+						this.AutorizacoesViewModel.setProperty("/usuario/visiblePanel", true);
+						setTimeout(() => { this.AutorizacoesViewModel.setProperty("/usuario/expanded", true); }, 500)
 	
 					})
 				this.setModel(this.SelectedUserModel, "SelectedUserModel");
@@ -114,9 +114,14 @@ sap.ui.define(
 				oTreeTable.expandToLevel(4);
 			},
 	
-			onClosePanel: function (){
-				this.AutorizacoesViewModel.setProperty("/sizeSplitter", "100%");
-				this.AutorizacoesViewModel.setProperty("/expanded", false);
+			onClosePerfilPanel: function (){
+				this.AutorizacoesViewModel.setProperty("/perfil/sizeSplitter", "100%");
+				this.AutorizacoesViewModel.setProperty("/perfil/expanded", false);
+			},
+	
+			onCloseUsuarioPanel: function (){
+				this.AutorizacoesViewModel.setProperty("/usuario/sizeSplitter", "100%");
+				this.AutorizacoesViewModel.setProperty("/usuario/expanded", false);
 			},
 
 		});

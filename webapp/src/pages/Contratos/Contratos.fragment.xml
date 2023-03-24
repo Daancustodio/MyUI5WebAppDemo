@@ -3,7 +3,7 @@
 	xmlns="sap.m">
 	
 	<Dialog	
-		 stretch="true" 
+		stretch="true" 
 		title="{i18n>Commom.Contratos}">
 		<content>
 			<VBox class="sapUiSmallMargin" >			

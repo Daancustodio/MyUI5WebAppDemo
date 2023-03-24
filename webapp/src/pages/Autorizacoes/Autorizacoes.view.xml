@@ -29,7 +29,7 @@
 								<l:PaneContainer>
 									<l:SplitPane requiredParentWidth="400">
 										<l:layoutData>
-											<l:SplitterLayoutData size="{AutorizacoesViewModel>/sizeSplitter}" minSize="450" />
+											<l:SplitterLayoutData size="{AutorizacoesViewModel>/perfil/sizeSplitter}" minSize="450" />
 										</l:layoutData>
 										<Panel>	
 											<headerToolbar>
@@ -66,7 +66,7 @@
 												visible="true" 
 												expandAnimation="true" 
 												expandable="true" 
-												expanded="{AutorizacoesViewModel>/expanded}">
+												expanded="{AutorizacoesViewModel>/perfil/expanded}">
 												<headerToolbar>
 													<OverflowToolbar>														
 														<Label text="{i18n>Commom.PermissoesDoPerfil}"/>
@@ -95,7 +95,7 @@
 																text="{i18n>Commom.Close}" 
 																icon="sap-icon://decline"
 																type="Reject"
-																press="onClosePanel"
+																press="onClosePerfilPanel"
 															>
 																
 															</Button>
@@ -195,7 +195,7 @@
 								<l:PaneContainer>
 									<l:SplitPane requiredParentWidth="400">
 										<l:layoutData>
-											<l:SplitterLayoutData size="{AutorizacoesViewModel>/sizeSplitter}" minSize="450" />
+											<l:SplitterLayoutData size="{AutorizacoesViewModel>/usuario/sizeSplitter}" minSize="450" />
 										</l:layoutData>
 										<Panel>	
 											<headerToolbar>
@@ -234,7 +234,7 @@
 												visible="true" 
 												expandAnimation="true" 
 												expandable="true" 
-												expanded="{AutorizacoesViewModel>/expanded}">
+												expanded="{AutorizacoesViewModel>/usuario/expanded}">
 												<headerToolbar>
 													<OverflowToolbar>														
 														<Label text="{i18n>Commom.PermissoesDoUsuario}"/>
@@ -264,7 +264,7 @@
 																	text="{i18n>Commom.Close}" 
 																	icon="sap-icon://decline"
 																	type="Reject"
-																	press="onClosePanel"
+																	press="onCloseUsuarioPanel"
 																>
 																	
 																</Button>
