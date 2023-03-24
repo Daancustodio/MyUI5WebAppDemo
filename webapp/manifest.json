@@ -155,6 +155,11 @@
           "pattern": "CoordenadoriasRegionaisSaude",
           "name": "CoordenadoriasRegionaisSaude",
           "target": "CoordenadoriasRegionaisSaude"
+        },
+        {
+          "pattern": "Cadastros",
+          "name": "Cadastros",
+          "target": "Cadastros"
         }
       ],
       "targets": {
@@ -230,6 +235,11 @@
           "viewName": "CoordenadoriasRegionaisSaude",
           "viewLevel": 3,
           "viewPath": "MyUI5WebApp.src.pages.CoordenadoriasRegionaisSaude"
+        },
+        "Cadastros": {
+          "viewName": "Cadastros",
+          "viewLevel": 3,
+          "viewPath": "MyUI5WebApp.src.pages.Cadastros"
         }
       }
     }

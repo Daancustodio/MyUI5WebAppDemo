@@ -1,11 +1,5 @@
 {
-  "navigation": [
-    {
-      "title": "Commom.CadastroPerfilUsuario",
-      "icon": "sap-icon://key-user-settings",
-      "expanded": true,
-      "key": "CadastroPerfilUsuario"
-    },
+  "navigation": [    
     {
       "title": "Commom.Autorizacoes",
       "icon": "sap-icon://locked",
@@ -18,41 +12,56 @@
       "expanded": true,
       "key": "Contratos"
     },
+    
     {
-      "title": "Commom.TiposContrato",
-      "icon": "sap-icon://tags",
+      "title": "Commom.Cadastros",
+      "icon": "sap-icon://add",
       "expanded": true,
-      "key": "TiposContrato"
-    },
-    {
-      "title": "Commom.ModalidadesGestao",
-      "icon": "sap-icon://program-triangles",
-      "expanded": true,
-      "key": "ModalidadesGestao"
-    },
-    {
-      "title": "Commom.ModalidadesAtencao",
-      "icon": "sap-icon://project-definition-triangle",
-      "expanded": true,
-      "key": "ModalidadesAtencao"
-    },
-    {
-      "title": "Commom.SupervisoesTecnica",
-      "icon": "sap-icon://official-service",
-      "expanded": true,
-      "key": "SupervisoesTecnica"
-    },
-    {
-      "title": "Commom.DistritosAdministrativo",
-      "icon": "sap-icon://factory",
-      "expanded": true,
-      "key": "DistritosAdministrativo"
-    },
-    {
-      "title": "Commom.CoordenadoriasRegionaisSaude",
-      "icon": "sap-icon://tree",
-      "expanded": true,
-      "key": "CoordenadoriasRegionaisSaude"
+      "key": "Cadastros",
+      "items": [
+        {
+          "title": "Commom.TiposContrato",
+          "icon": "sap-icon://tags",
+          "expanded": true,
+          "key": "TiposContrato"
+        },
+        {
+          "title": "Commom.ModalidadesGestao",
+          "icon": "sap-icon://program-triangles",
+          "expanded": true,
+          "key": "ModalidadesGestao"
+        },
+        {
+          "title": "Commom.ModalidadesAtencao",
+          "icon": "sap-icon://project-definition-triangle",
+          "expanded": true,
+          "key": "ModalidadesAtencao"
+        },
+        {
+          "title": "Commom.SupervisoesTecnica",
+          "icon": "sap-icon://official-service",
+          "expanded": true,
+          "key": "SupervisoesTecnica"
+        },
+        {
+          "title": "Commom.DistritosAdministrativo",
+          "icon": "sap-icon://factory",
+          "expanded": true,
+          "key": "DistritosAdministrativo"
+        },
+        {
+          "title": "Commom.CoordenadoriasRegionaisSaude",
+          "icon": "sap-icon://tree",
+          "expanded": true,
+          "key": "CoordenadoriasRegionaisSaude"
+        },
+        {
+          "title": "Commom.CadastroPerfilUsuario",
+          "icon": "sap-icon://key-user-settings",
+          "expanded": true,
+          "key": "CadastroPerfilUsuario"
+        }
+      ]
     }
   ],
   "fixedNavigation": [

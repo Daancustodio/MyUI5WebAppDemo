@@ -156,6 +156,16 @@ sap.ui.define([
 			let reverseData = data.reverse();
 			model.setData(reverseData)
 			model.refresh(true);
-		}
+		},
+		sortingCriteria(chave) {
+			return function (a, b) {
+				if (a[chave] > b[chave]) {
+					return 1;
+				} else if (a[chave] < b[chave]) {
+					return -1
+				}
+				return 0;
+			}
+		},
 	});
 });

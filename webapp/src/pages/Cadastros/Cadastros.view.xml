@@ -1,0 +1,59 @@
+<mvc:View 
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns="sap.uxap"
+        xmlns:layout="sap.ui.layout"
+        xmlns:m="sap.m"		   
+        xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+        xmlns:invCharts="sipef.controls.invCharts"
+        controllerName="MyUI5WebApp.src.pages.Cadastros.Cadastros"
+        height="100%">
+	    <ObjectPageLayout 
+            id="reportsMenuPage"
+            navigate="onSectionChanged"
+            enableLazyLoading="false"
+            useIconTabBar="false"      
+			sections="{Cadastros>/}" 
+            showTitleInHeaderContent="false"
+            upperCaseAnchorBar="false">
+            <headerTitle>
+                <ObjectPageHeader 
+                id="headerForTest"
+                objectTitle="{i18n>Commom.Cadastros}"
+                showTitleSelector="false"           
+                objectImageShape="Circle"
+                objectImageURI="sap-icon://sales-order-item"
+                />			
+            </headerTitle>         
+		<sections>
+			<ObjectPageSection titleUppercase="false"  title="{Cadastros>Titulo}">
+				<subSections>
+					<ObjectPageSubSection titleUppercase="true">
+						<blocks>
+								<m:HBox items="{financeiro>/}" justifyContent="Start" wrap="Wrap">
+									<m:GenericTile
+										id="firstTile"
+										frameType="OneByOne"
+										press="onNavRoutePress"
+										app:route="{financeiro>key}"
+										valueColor="Good"
+										class="shodow sapUiTinyMargin"
+										header="{financeiro>title}">
+										<m:TileContent footer="">
+											<m:content>
+												<m:NumericContent
+													app:route="approved"
+													valueColor="Good" 
+													icon="sap-icon://document-text"
+													value= " "
+													indicator="None" />
+											</m:content>
+										</m:TileContent> 
+									</m:GenericTile>                                    
+								</m:HBox>
+						</blocks>
+					</ObjectPageSubSection>					
+				</subSections>
+			</ObjectPageSection>          
+		</sections>
+	</ObjectPageLayout>
+</mvc:View>

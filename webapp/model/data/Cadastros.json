@@ -1,0 +1,18 @@
+[
+    {
+       
+        "Titulo" : "Administrativo"
+    },
+    {
+        "Code" : "0002",
+        "Titulo" : "Financeiro"
+    },
+    {
+        "Code" : "0003",
+        "Titulo" : "Supervisor"
+    },
+    {
+        "Code" : "0004",
+        "Titulo" : "Gestor"
+    }
+]

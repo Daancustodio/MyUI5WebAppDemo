@@ -69,23 +69,14 @@ sap.ui.define(
 
 			var model = this.createLocalRestModel("AppModel.json")
 			model.get()
-			.then(
-				(data)=>{
-						toogleButton.setEnabled(true)
-						const translateTitle = data => {
-							data.title = this.getText(data.title);
-						}
-
-						data.navigation.forEach(translateTitle);
-						data.fixedNavigation.forEach(translateTitle);
-						data.headerItems.forEach(translateTitle);
-
-						model.setData(data);
-				}
-				).catch(err =>{
-					this.showExeption(err)
-				})
-
+			.then(() =>{
+				/* model.getData().navigation.forEach(element => {
+					element.items.sort(this.sortingCriteria('title'))
+				}) */
+				this._toolPage.setSideContent(this.getSideContentTemplate(model.getData()))
+			})
+			toogleButton.setEnabled(true);
+			//this.getModel("AppMenuModel").setProperty("/enableMenu", true);
 			this._toolPage.setModel(model)
 		},
 
@@ -103,6 +94,55 @@ sap.ui.define(
 			let key = item.getKey();
 			this._toolPage.setSideExpanded(false);
             this.getRouter().navTo(key);
+		},
+
+		getSideContentTemplate(menudata) {
+			let side = new sap.tnt.SideNavigation();
+			this.navigationList = new sap.tnt.NavigationList();
+			let itemsFixed = new sap.tnt.NavigationList();
+			let that = this;
+			const createMenu = (menu, navigationList) => {
+				let translatedTitle = this.getText(menu.title)
+				let menuListItem = new sap.tnt.NavigationListItem(
+					{
+						select: (item) => {
+							that.onNavRoute(item)
+						},
+						text: translatedTitle,
+						icon: menu.icon,
+						expanded: menu.expanded,
+						key: menu.key,
+					}
+				);
+
+				if (!menu.items) {
+					navigationList.addItem(menuListItem);
+					return;
+				}
+				menu.items.forEach(x => {
+					let translatedTitle = this.getText(x.title)
+
+					let menuSubItem = new sap.tnt.NavigationListItem(
+						{
+							select: (item) => {
+								that.onNavRoute(item)
+							},
+							text: translatedTitle,
+							icon: x.icon,
+							key: x.key
+						}
+					);
+					menuListItem.addItem(menuSubItem);
+				});
+
+				navigationList.addItem(menuListItem);
+			}
+			menudata.navigation.forEach(menu => createMenu(menu, this.navigationList));
+			menudata.fixedNavigation.forEach(menu => createMenu(menu, itemsFixed));
+
+			side.setItem(this.navigationList);
+			side.setFixedItem(itemsFixed);
+			return side;
 		},
 	});
 });
