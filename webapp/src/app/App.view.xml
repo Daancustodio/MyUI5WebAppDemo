@@ -15,15 +15,15 @@
 		</Button>
 		<Image
 			class="img-logo-topo"
-			src="webapp/img/Logo_SIPEF_3.0-removebg-preview.png"
+			src="webapp/img/logo-sicap.png"
 			densityAware="false">
 		</Image>
 	
-		<!-- <Text text="{i18n>App.Name}" wrapping="false">
+		 <Text text="{i18n>App.Name}" wrapping="false">
 			<layoutData>
 				<OverflowToolbarLayoutData priority="Disappear" />
 			</layoutData>
-		</Text> -->
+		</Text>
 		<ToolbarSpacer />
 		<Button id="userLoggedPopOver"    text="{currentUser>/UserName}" type="Transparent"  icon="sap-icon://person-placeholder"  press="onLoginPopOver">
 			<layoutData>
