@@ -47,11 +47,9 @@ sap.ui.define(
 			},	
 
 			onNewPress(oEvent){
-                if(!this._oNewAutorizacoesFragment){
-					this._oNewAutorizacoesFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.Autorizacoes.Autorizacoes", this);
-					this.getView().addDependent(this._oNewAutorizacoesFragment);
-					this._oNewAutorizacoesFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewAutorizacoesFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.Autorizacoes.Autorizacoes", this);
+				this.getView().addDependent(this._oNewAutorizacoesFragment);
+				this._oNewAutorizacoesFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 
 				this._oNewAutorizacoesFragment.open()
 

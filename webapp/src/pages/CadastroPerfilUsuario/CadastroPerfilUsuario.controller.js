@@ -26,11 +26,9 @@ sap.ui.define(
 			},	
 
 			onNewPress(oEvent){
-                if(!this._oNewProfileFragment){
-					this._oNewProfileFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.CadastroPerfilUsuario.CadastroPerfilUsuario", this);
-					this.getView().addDependent(this._oNewProfileFragment);
-					this._oNewProfileFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewProfileFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.CadastroPerfilUsuario.CadastroPerfilUsuario", this);
+				this.getView().addDependent(this._oNewProfileFragment);
+				this._oNewProfileFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 
 				this._oNewProfileFragment.open()
 

@@ -27,22 +27,18 @@ sap.ui.define(
 			},	
 
 			onNewPress(oEvent){
-                if(!this._oNewCadastrosFragment){
-					this._oNewCadastrosFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.Cadastros.Cadastros", this);
-					this.getView().addDependent(this._oNewCadastrosFragment);
-					this._oNewCadastrosFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewCadastrosFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.Cadastros.Cadastros", this);
+				this.getView().addDependent(this._oNewCadastrosFragment);
+				this._oNewCadastrosFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 
 				this._oNewCadastrosFragment.setModel(new RestModel())
 				this._oNewCadastrosFragment.open()
 			},
 
 			onEditPress(oEvent){
-                if(!this._oNewCadastrosFragment){
-					this._oNewCadastrosFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.Cadastros.Cadastros", this);
-					this.getView().addDependent(this._oNewCadastrosFragment);
-					this._oNewCadastrosFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				}
+				this._oNewCadastrosFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.Cadastros.Cadastros", this);
+				this.getView().addDependent(this._oNewCadastrosFragment);
+				this._oNewCadastrosFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 				
 				let selectedRow = oEvent.getSource().getParent().getParent();
 				let table = selectedRow.getParent();
