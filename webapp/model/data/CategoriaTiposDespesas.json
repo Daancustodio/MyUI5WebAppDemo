@@ -1,0 +1,22 @@
+[
+    {
+        "Codigo" : "01",
+        "Descricao" : "Remuneração de pessoal"
+    },
+    {
+        "Codigo" : "02",
+        "Descricao" : "Serviços de terceiros"
+    },
+    {
+        "Codigo" : "03",
+        "Descricao" : "Obras"
+    },
+    {
+        "Codigo" : "04",
+        "Descricao" : "Material de consumo"
+    },   
+    {
+        "Codigo" : "05",
+        "Descricao" : "Manutenção"
+    }
+]

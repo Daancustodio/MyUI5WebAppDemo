@@ -67,6 +67,12 @@
       "icon": "sap-icon://error",
       "expanded": true,
       "key": "TiposDespesas"
+    },
+    {
+      "title": "Commom.CategoriaTiposDespesas",
+      "icon": "sap-icon://error",
+      "expanded": true,
+      "key": "CategoriaTiposDespesas"
     }
   ],
   "fixedNavigation": [

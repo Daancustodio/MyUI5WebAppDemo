@@ -1,0 +1,61 @@
+<mvc:View
+	controllerName="MyUI5WebApp.src.pages.CategoriaTiposDespesas.CategoriaTiposDespesas"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"	
+	height="100%">
+	<Page 
+		showNavButton="true" 
+		title="{i18n>Commom.CategoriaTiposDespesas}" 
+		navButtonPress="onNavBack">
+		
+		<content>		
+			<Table 
+			inset="false"
+			alternateRowColors="true"
+			items="{CategoriaTiposDespesas>/}">
+			<headerToolbar>
+				<OverflowToolbar>
+					<SearchField  placeholder="{i18n>Commom.FindCategoriaTiposDespesas}"  width="40%" />
+					<Button  icon="sap-icon://sort"   press="onSortReverse"/>
+					<ToolbarSpacer/>
+					<Button  icon="sap-icon://add" type="Emphasized"   text="{i18n>Commom.New}"  press="onNewPress"/>
+
+				</OverflowToolbar>
+			</headerToolbar>
+			<columns>
+				<Column
+					width="12em">
+					<Text text="{i18n>Commom.Code}" />
+				</Column>
+				<Column
+					minScreenWidth="Tablet"
+					demandPopin="true">
+					<Text text="{i18n>Commom.Description}" />
+				</Column>
+				<Column
+					width="84px" 
+					minScreenWidth="Tablet"
+					demandPopin="true"
+					hAlign="Center">
+					<Text text="{i18n>Commom.Actions}" />
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem vAlign="Middle">
+					<cells>
+						<ObjectIdentifier							
+							 title="{CategoriaTiposDespesas>Codigo}"/>
+						<Text
+							text="{CategoriaTiposDespesas>Descricao}" />
+						<HBox justifyContent="SpaceBetween" alignContent="SpaceBetween" > 
+							<Button  icon="sap-icon://edit"  press="onEditPress"  type="Default" />
+							<Button  icon="sap-icon://delete" press="onDeletePress" type="Reject"    />
+						</HBox>
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+		</content>	
+	</Page>
+</mvc:View>
