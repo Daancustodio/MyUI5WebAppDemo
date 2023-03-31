@@ -79,6 +79,18 @@
       "icon": "sap-icon://error",
       "expanded": true,
       "key": "Orcamento"
+    },
+    {
+      "title": "Commom.ModelosDocumento",
+      "icon": "sap-icon://error",
+      "expanded": true,
+      "key": "ModelosDocumento"
+    },
+    {
+      "title": "Commom.CastroATAs",
+      "icon": "sap-icon://error",
+      "expanded": true,
+      "key": "CastroATAs"
     }
   ],
   "fixedNavigation": [

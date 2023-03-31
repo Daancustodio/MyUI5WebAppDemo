@@ -175,6 +175,16 @@
           "pattern": "Orcamento",
           "name": "Orcamento",
           "target": "Orcamento"
+        },
+        {
+          "pattern": "ModelosDocumento",
+          "name": "ModelosDocumento",
+          "target": "ModelosDocumento"
+        },
+        {
+          "pattern": "CastroATAs",
+          "name": "CastroATAs",
+          "target": "CastroATAs"
         }
       ],
       "targets": {
@@ -270,6 +280,16 @@
           "viewName": "Orcamento",
           "viewLevel": 3,
           "viewPath": "MyUI5WebApp.src.pages.Orcamento"
+        },
+        "ModelosDocumento": {
+          "viewName": "ModelosDocumento",
+          "viewLevel": 3,
+          "viewPath": "MyUI5WebApp.src.pages.ModelosDocumento"
+        },
+        "CastroATAs": {
+          "viewName": "CastroATAs",
+          "viewLevel": 3,
+          "viewPath": "MyUI5WebApp.src.pages.CastroATAs"
         }
       }
     }

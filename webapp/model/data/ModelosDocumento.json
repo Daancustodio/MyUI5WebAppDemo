@@ -1,0 +1,22 @@
+[
+    {
+        "Id" : "1",
+        "Descricao" : "Carta de reajuste",
+        "Tipo" : "Contrato"
+    },
+    {
+        "Id" : "2",
+        "Descricao" : "ATA de CTA",
+        "Tipo" : "ATA"
+    },
+    {
+        "Id" : "3",
+        "Descricao" : "Aditivo",
+        "Tipo" : "Contrato"
+    },
+    {
+        "Id" : "4",
+        "Descricao" : "Despacho",
+        "Tipo" : "Contrato"
+    }
+]
