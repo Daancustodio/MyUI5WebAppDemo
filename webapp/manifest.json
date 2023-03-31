@@ -160,6 +160,11 @@
           "pattern": "Cadastros",
           "name": "Cadastros",
           "target": "Cadastros"
+        },
+        {
+          "pattern": "TiposDespesas",
+          "name": "TiposDespesas",
+          "target": "TiposDespesas"
         }
       ],
       "targets": {
@@ -240,6 +245,11 @@
           "viewName": "Cadastros",
           "viewLevel": 3,
           "viewPath": "MyUI5WebApp.src.pages.Cadastros"
+        },
+        "TiposDespesas": {
+          "viewName": "TiposDespesas",
+          "viewLevel": 3,
+          "viewPath": "MyUI5WebApp.src.pages.TiposDespesas"
         }
       }
     }

@@ -1,5 +1,5 @@
 {
-  "navigation": [    
+  "navigation": [
     {
       "title": "Commom.Autorizacoes",
       "icon": "sap-icon://locked",
@@ -12,7 +12,6 @@
       "expanded": true,
       "key": "Contratos"
     },
-    
     {
       "title": "Commom.Cadastros",
       "icon": "sap-icon://add",
@@ -62,6 +61,12 @@
           "key": "CadastroPerfilUsuario"
         }
       ]
+    },
+    {
+      "title": "Commom.TiposDespesas",
+      "icon": "sap-icon://error",
+      "expanded": true,
+      "key": "TiposDespesas"
     }
   ],
   "fixedNavigation": [

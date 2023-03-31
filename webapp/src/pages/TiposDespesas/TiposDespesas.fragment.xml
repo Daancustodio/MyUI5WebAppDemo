@@ -1,0 +1,36 @@
+<core:FragmentDefinition 
+	xmlns:core="sap.ui.core" 
+	xmlns="sap.m">
+	
+	<Dialog	
+		title="{i18n>Commom.TiposDespesas}">
+		<content>
+			<VBox class="sapUiSmallMargin" >			
+				<Label text="{i18n>Commom.Code}" />
+				<Input value="{/Codigo}" required="true" placeholder="{i18n>Commom.CodigoDesperaPlaceholder}" />
+				<Label text="{i18n>Commom.Descricao}" />
+				<Input value="{/Descricao}" required="true" placeholder="{i18n>Commom.Descricao}" />
+				<Label text="{i18n>Commom.Categoria}" />
+				<Select  width="100%"  />
+				<CheckBox  selected="{/ContaSintetica}"  text="{i18n>Commom.ContaSintetica}"    />
+			</VBox>
+			
+		</content>
+		<footer>
+			<Toolbar>
+				<content>	
+					<ToolbarSpacer></ToolbarSpacer>			
+					<Button type="Accept"
+							text="{i18n>Commom.Save}"
+							press=".closeDialog" />
+					<Button id="Reject"
+						text="{i18n>Commom.Cancel}"
+						type="Reject"
+						press=".closeDialog"
+						/>
+				</content>
+			</Toolbar>
+		</footer>
+	</Dialog>
+	
+</core:FragmentDefinition>

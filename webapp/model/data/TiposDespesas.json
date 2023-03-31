@@ -1,0 +1,27 @@
+[
+    {
+        "Codigo" : "01.01.01",
+        "Descricao" : "Salário",
+        "Categoria" : "Remuneração de pessoal"
+    },
+    {
+        "Codigo" : "01.01.02",
+        "Descricao" : "Adicional de insalubridade",
+        "Categoria" : "Remuneração de pessoal"
+    },
+    {
+        "Codigo" : "01.01.03",
+        "Descricao" : "Gratificação",
+        "Categoria" : "Remuneração de pessoal"
+    },
+    {
+        "Codigo" : "02.01.01",
+        "Descricao" : "Material odontológico",
+        "Categoria" : "Material de consumo"
+    },   
+    {
+        "Codigo" : "04.01.01",
+        "Descricao" : "Manutenção predial e adequações",
+        "Categoria" : "Manutenção"
+    }
+]
