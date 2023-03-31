@@ -6,39 +6,39 @@ sap.ui.define(
 	function (BaseController, RestModel) {
 		"use strict";
 
-		return BaseController.extend("MyUI5WebApp.src.pages.CastroATAs.CastroATAs", {
+		return BaseController.extend("MyUI5WebApp.src.pages.CadastroATAs.CadastroATAs", {
 			onInit : function(){
-				console.log("controller [CastroATAs] Iniciado");
-				this.CastroATAs = this.createLocalRestModel("CastroATAs.json");
-				this.CastroATAs.get().then(console.log)
-				this.setModel(this.CastroATAs, "CastroATAs");
+				console.log("controller [CadastroATAs] Iniciado");
+				this.CadastroATAs = this.createLocalRestModel("CadastroATAs.json");
+				this.CadastroATAs.get().then(console.log)
+				this.setModel(this.CadastroATAs, "CadastroATAs");
 			},		
 
 			onAfterRendering :  function(){
-				console.log("controller [CastroATAs] Renderizado");
+				console.log("controller [CadastroATAs] Renderizado");
 			},	
 
 			onBeforeRendering :  function(){
-				console.log("controller [CastroATAs] Método chamado antes da Renderização");
+				console.log("controller [CadastroATAs] Método chamado antes da Renderização");
 			},	
 
 			onExit :  function(){
-				console.log("controller [CastroATAs] Este método é chamado após a destruição do View associada");
+				console.log("controller [CadastroATAs] Este método é chamado após a destruição do View associada");
 			},	
 
 			onNewPress(oEvent){
-				this._oNewCastroATAsFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.CastroATAs.CastroATAs", this);
-				this.getView().addDependent(this._oNewCastroATAsFragment);
-				this._oNewCastroATAsFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
+				this._oNewCadastroATAsFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.CadastroATAs.CadastroATAs", this);
+				this.getView().addDependent(this._oNewCadastroATAsFragment);
+				this._oNewCadastroATAsFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 
-				this._oNewCastroATAsFragment.setModel(new RestModel())
-				this._oNewCastroATAsFragment.open()
+				this._oNewCadastroATAsFragment.setModel(new RestModel())
+				this._oNewCadastroATAsFragment.open()
 			},
 
 			onEditPress(oEvent){
-				this._oNewCastroATAsFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.CastroATAs.CastroATAs", this);
-				this.getView().addDependent(this._oNewCastroATAsFragment);
-				this._oNewCastroATAsFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
+				this._oNewCadastroATAsFragment = sap.ui.xmlfragment("MyUI5WebApp.src.pages.CadastroATAs.CadastroATAs", this);
+				this.getView().addDependent(this._oNewCadastroATAsFragment);
+				this._oNewCadastroATAsFragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
 				
 				let selectedRow = oEvent.getSource().getParent().getParent();
 				let table = selectedRow.getParent();
@@ -46,8 +46,8 @@ sap.ui.define(
 				let selectedObject = selectedRow.getBindingContext(bindingInfo.model).getObject()
 				let selectedObjectModel = new RestModel();
 				selectedObjectModel.setData(selectedObject)				
-				this._oNewCastroATAsFragment.setModel(selectedObjectModel)
-				this._oNewCastroATAsFragment.open()
+				this._oNewCadastroATAsFragment.setModel(selectedObjectModel)
+				this._oNewCadastroATAsFragment.open()
 
 			},
 			

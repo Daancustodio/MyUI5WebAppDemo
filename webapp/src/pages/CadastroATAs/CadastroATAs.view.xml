@@ -1,22 +1,22 @@
 <mvc:View
-	controllerName="MyUI5WebApp.src.pages.CastroATAs.CastroATAs"
+	controllerName="MyUI5WebApp.src.pages.CadastroATAs.CadastroATAs"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:core="sap.ui.core"	
 	height="100%">
 	<Page 
 		showNavButton="true" 
-		title="{i18n>Commom.CastroATAs}" 
+		title="{i18n>Commom.CadastroATAs}" 
 		navButtonPress="onNavBack">
 		
 		<content>		
 			<Table 
 			inset="false"
 			alternateRowColors="true"
-			items="{CastroATAs>/}">
+			items="{CadastroATAs>/}">
 			<headerToolbar>
 				<OverflowToolbar>
-					<SearchField  placeholder="{i18n>Commom.FindCastroATAs}"  width="40%" />
+					<SearchField  placeholder="{i18n>Commom.FindCadastroATAs}"  width="40%" />
 					<Button  icon="sap-icon://sort"   press="onSortReverse"/>
 					<ToolbarSpacer/>
 					<Button  icon="sap-icon://add" type="Emphasized"   text="{i18n>Commom.New}"  press="onNewPress"/>
@@ -31,7 +31,22 @@
 				<Column
 					minScreenWidth="Tablet"
 					demandPopin="true">
-					<Text text="{i18n>Commom.Description}" />
+					<Text text="{i18n>Commom.Coordernadoria}" />
+				</Column>
+				<Column
+					minScreenWidth="Tablet"
+					demandPopin="true">
+					<Text text="{i18n>Commom.Contrato}" />
+				</Column>
+				<Column
+					minScreenWidth="Tablet"
+					demandPopin="true">
+					<Text text="{i18n>Commom.OS}" />
+				</Column>
+				<Column
+					minScreenWidth="Tablet"
+					demandPopin="true">
+					<Text text="{i18n>Commom.DataVisita}" />
 				</Column>
 				<Column
 					width="84px" 
@@ -45,9 +60,15 @@
 				<ColumnListItem vAlign="Middle">
 					<cells>
 						<ObjectIdentifier							
-							 title="{CastroATAs>Id}"/>
+							 title="{CadastroATAs>Id}"/>
 						<Text
-							text="{CastroATAs>Descricao}" />
+							text="{CadastroATAs>Coordenadoria}" />
+						<Text
+							text="{CadastroATAs>Contrato}" />
+						<Text
+							text="{CadastroATAs>OS}" />
+						<Text
+							text="{CadastroATAs>DataVisita}" />
 						<HBox justifyContent="SpaceBetween" alignContent="SpaceBetween" > 
 							<Button  icon="sap-icon://edit"  press="onEditPress"  type="Default" />
 							<Button  icon="sap-icon://delete" press="onDeletePress" type="Reject"    />

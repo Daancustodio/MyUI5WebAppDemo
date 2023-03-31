@@ -87,10 +87,10 @@
       "key": "ModelosDocumento"
     },
     {
-      "title": "Commom.CastroATAs",
+      "title": "Commom.CadastroATAs",
       "icon": "sap-icon://error",
       "expanded": true,
-      "key": "CastroATAs"
+      "key": "CadastroATAs"
     }
   ],
   "fixedNavigation": [

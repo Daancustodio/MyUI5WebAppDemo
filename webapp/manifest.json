@@ -182,9 +182,9 @@
           "target": "ModelosDocumento"
         },
         {
-          "pattern": "CastroATAs",
-          "name": "CastroATAs",
-          "target": "CastroATAs"
+          "pattern": "CadastroATAs",
+          "name": "CadastroATAs",
+          "target": "CadastroATAs"
         }
       ],
       "targets": {
@@ -286,10 +286,10 @@
           "viewLevel": 3,
           "viewPath": "MyUI5WebApp.src.pages.ModelosDocumento"
         },
-        "CastroATAs": {
-          "viewName": "CastroATAs",
+        "CadastroATAs": {
+          "viewName": "CadastroATAs",
           "viewLevel": 3,
-          "viewPath": "MyUI5WebApp.src.pages.CastroATAs"
+          "viewPath": "MyUI5WebApp.src.pages.CadastroATAs"
         }
       }
     }

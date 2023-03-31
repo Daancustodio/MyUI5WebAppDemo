@@ -3,7 +3,7 @@
 	xmlns="sap.m">
 	
 	<Dialog	
-		title="{i18n>Commom.CastroATAs}">
+		title="{i18n>Commom.CadastroATAs}">
 		<content>
 			<VBox class="sapUiSmallMargin" >			
 				<Label text="{i18n>Commom.Descricao}" />
