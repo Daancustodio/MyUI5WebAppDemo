@@ -73,6 +73,12 @@
       "icon": "sap-icon://error",
       "expanded": true,
       "key": "CategoriaTiposDespesas"
+    },
+    {
+      "title": "Commom.Orcamento",
+      "icon": "sap-icon://error",
+      "expanded": true,
+      "key": "Orcamento"
     }
   ],
   "fixedNavigation": [

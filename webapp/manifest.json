@@ -170,6 +170,11 @@
           "pattern": "CategoriaTiposDespesas",
           "name": "CategoriaTiposDespesas",
           "target": "CategoriaTiposDespesas"
+        },
+        {
+          "pattern": "Orcamento",
+          "name": "Orcamento",
+          "target": "Orcamento"
         }
       ],
       "targets": {
@@ -260,6 +265,11 @@
           "viewName": "CategoriaTiposDespesas",
           "viewLevel": 3,
           "viewPath": "MyUI5WebApp.src.pages.CategoriaTiposDespesas"
+        },
+        "Orcamento": {
+          "viewName": "Orcamento",
+          "viewLevel": 3,
+          "viewPath": "MyUI5WebApp.src.pages.Orcamento"
         }
       }
     }
