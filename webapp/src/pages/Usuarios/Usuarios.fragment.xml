@@ -3,12 +3,62 @@
 	xmlns="sap.m">
 	
 	<Dialog	
+		 stretch="true" 
 		title="{i18n>Commom.Usuarios}">
 		<content>
-			<VBox class="sapUiSmallMargin" >			
-				<Label text="{i18n>Commom.Descricao}" />
-				<Input value="{/Descricao}" required="true" placeholder="{i18n>Commom.Descricao}" />
-			</VBox>
+			<Panel  >
+				<headerToolbar>
+					<OverflowToolbar>
+						<Title text="{i18n>Commom.Cadastro}"/>
+					</OverflowToolbar>
+				</headerToolbar>
+				<content>
+					<VBox fitContainer="true" class="sapUiSmallMargin" >
+							<Label text="{i18n>Commom.NomeLogin}" />
+							<Input value="{/nomeCompleto}" required="true" placeholder="{i18n>Commom.Descricao}" />
+							<Label text="{i18n>Commom.NomeCompleto}" />
+							<Input value="{/nomeCompleto}" required="true" placeholder="{i18n>Commom.Descricao}" />
+							<Label text="{i18n>Commom.Email}" />
+							<Input  value="{/nomeCompleto}" required="true" placeholder="{i18n>Commom.Descricao}" />
+							<Label text="{i18n>Commom.Senha}" />
+							<Input  value="{/nomeCompleto}" required="true" placeholder="{i18n>Commom.Descricao}" />
+					</VBox>					
+				</content>
+			</Panel>
+			<Panel  >
+				<headerToolbar>
+					<OverflowToolbar>
+						<Title text="{i18n>Commom.Perfil}"/>
+					</OverflowToolbar>
+				</headerToolbar>
+				<content>
+					<VBox fitContainer="true" class="sapUiSmallMargin" >
+							<Label text="{i18n>Commom.Perfil}" />
+							<Select  width="90vw"  selectedKey="{/nomeCompleto}"  >								
+							</Select>
+							<Label text="{i18n>Commom.Instituicao}" />
+							<Select width="90vw"  selectedKey="{/nomeCompleto}"  >							
+							</Select>
+							<HBox justifyContent="SpaceBetween" alignItems="Center" alignContent="SpaceBetween">
+								<HBox alignItems="Center" >
+									<Label text="{i18n>Commom.Bloqueado}" class="sapUiTinyMarginEnd" />
+									<Switch  customTextOff="{i18n>Commom.NAO}" customTextOn="{i18n>Commom.SIM}" />
+								</HBox>
+								<HBox alignItems="Center" >
+									<Label text="{i18n>Commom.Auditor}" class="sapUiTinyMarginEnd" />
+									<Switch  customTextOff="{i18n>Commom.NAO}" customTextOn="{i18n>Commom.SIM}" />
+								</HBox>
+								<HBox alignItems="Center" >
+									<Label text="{i18n>Commom.SuperUsuario}" class="sapUiTinyMarginEnd" />
+									<Switch  customTextOff="{i18n>Commom.NAO}" customTextOn="{i18n>Commom.SIM}" />
+								</HBox>									
+							</HBox>
+
+
+					</VBox>					
+				</content>
+			</Panel>
+
 			
 		</content>
 		<footer>

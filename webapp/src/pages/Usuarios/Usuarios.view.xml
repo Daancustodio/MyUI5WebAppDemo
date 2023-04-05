@@ -43,7 +43,7 @@
 				<Column
 					minScreenWidth="Tablet"
 					demandPopin="true">
-					<Text text="{i18n>Commom.Aditor}" />
+					<Text text="{i18n>Commom.Auditor}" />
 				</Column>
 				<Column
 					minScreenWidth="Tablet"
@@ -53,7 +53,7 @@
 				<Column
 					minScreenWidth="Tablet"
 					demandPopin="true">
-					<Text text="{i18n>Commom.Bloquedo}" />
+					<Text text="{i18n>Commom.Bloqueado}" />
 				</Column>
 				<Column
 					minScreenWidth="Tablet"
