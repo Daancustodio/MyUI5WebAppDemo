@@ -91,6 +91,18 @@
       "icon": "sap-icon://error",
       "expanded": true,
       "key": "CadastroATAs"
+    },
+    {
+      "title": "Commom.Usuarios",
+      "icon": "sap-icon://error",
+      "expanded": true,
+      "key": "Usuarios"
+    },
+    {
+      "title": "Commom.TesteCriacao",
+      "icon": "sap-icon://error",
+      "expanded": true,
+      "key": "TesteCriacao"
     }
   ],
   "fixedNavigation": [

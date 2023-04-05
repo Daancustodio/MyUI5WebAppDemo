@@ -1,0 +1,98 @@
+<mvc:View
+	controllerName="MyUI5WebApp.src.pages.Usuarios.Usuarios"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"	
+	height="100%">
+	<Page 
+		showNavButton="true" 
+		title="{i18n>Commom.Usuarios}" 
+		navButtonPress="onNavBack">
+		
+		<content>		
+			<Table 
+			inset="false"
+			alternateRowColors="true"
+			items="{Usuarios>/}">
+			<headerToolbar>
+				<OverflowToolbar>
+					<SearchField  placeholder="{i18n>Commom.FindUsuarios}"  width="40%" />
+					<Button  icon="sap-icon://sort"   press="onSortReverse"/>
+					<ToolbarSpacer/>
+					<Button  icon="sap-icon://add" type="Emphasized"   text="{i18n>Commom.New}"  press="onNewPress"/>
+
+				</OverflowToolbar>
+			</headerToolbar>
+			<columns>
+				<Column
+					width="5em">
+					<Text text="{i18n>Commom.Code}" />
+				</Column>
+				<Column
+					width="15em"
+					minScreenWidth="Tablet"
+						demandPopin="true">
+					<Text text="{i18n>Commom.Name}" />
+				</Column>
+				<Column
+					width="15em"
+					minScreenWidth="Tablet"
+					demandPopin="true">
+					<Text text="{i18n>Commom.Email}" />
+				</Column>
+				<Column
+					minScreenWidth="Tablet"
+					demandPopin="true">
+					<Text text="{i18n>Commom.Aditor}" />
+				</Column>
+				<Column
+					minScreenWidth="Tablet"
+					demandPopin="true">
+					<Text text="{i18n>Commom.SuperUsuario}" />
+				</Column>
+				<Column
+					minScreenWidth="Tablet"
+					demandPopin="true">
+					<Text text="{i18n>Commom.Bloquedo}" />
+				</Column>
+				<Column
+					minScreenWidth="Tablet"
+					demandPopin="true">
+					<Text text="{i18n>Commom.DataInicioBloqueio}" />
+				</Column>
+				<Column
+					minScreenWidth="Tablet"
+					demandPopin="true">
+					<Text text="{i18n>Commom.DataFimBloqueio}" />
+				</Column>
+				<Column
+					width="124px" 
+					minScreenWidth="Tablet"
+					demandPopin="true"
+					hAlign="Center">
+					<Text text="{i18n>Commom.Actions}" />
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem vAlign="Middle">
+					<cells>
+						<ObjectIdentifier title="{Usuarios>id}"/>
+						<Text text="{Usuarios>nomeCompleto}" />
+						<Text text="{Usuarios>email}" />
+						<CheckBox  editable="false" displayOnly="true"   selected="{Usuarios>auditor}" />
+						<CheckBox  editable="false" displayOnly="true"   selected="{Usuarios>super}" />
+						<CheckBox  editable="false" displayOnly="true"   selected="{Usuarios>bloqueado}" />
+						<Text text="{Usuarios>dataIncioBloqueio}" />
+						<Text text="{Usuarios>dataFimBloqueio}" />
+						<HBox justifyContent="SpaceBetween" alignContent="SpaceBetween" > 
+							<Button  icon="sap-icon://edit"  press="onEditPress"  type="Default" />
+							<Button  icon="sap-icon://key"  press="onBloquearUsuario"  type="Emphasized" />
+							<Button  icon="sap-icon://delete" press="onDeletePress" type="Reject"    />
+						</HBox>
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+		</content>	
+	</Page>
+</mvc:View>

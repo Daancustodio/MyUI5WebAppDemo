@@ -11,7 +11,10 @@
       "fiscalizador": "",
       "super": false,
       "administrador": false,
+      "auditor": false,
       "master": true,
+      "dataIncioBloqueio" : "05/04/2023",
+      "dataFimBloqueio" : "05/05/2023",
       "source": "O"
     },
     {
@@ -26,7 +29,10 @@
       "fiscalizador": "",
       "super": false,
       "administrador": false,
+      "auditor": false,
       "master": true,
+      "dataIncioBloqueio" : "05/04/2023",
+      "dataFimBloqueio" : "05/04/2023",
       "source": "O"
     },
     {
@@ -41,7 +47,10 @@
       "fiscalizador": "",
       "super": false,
       "administrador": false,
+      "auditor": false,
       "master": false,
+      "dataIncioBloqueio" : "05/04/2023",
+      "dataFimBloqueio" : "05/04/2023",
       "source": "O"
     },
     {
@@ -56,7 +65,10 @@
       "fiscalizador": "",
       "super": false,
       "administrador": false,
+      "auditor": false,
       "master": true,
+      "dataIncioBloqueio" : "05/04/2023",
+      "dataFimBloqueio" : "05/04/2023",
       "source": "O"
     },
     {
@@ -71,7 +83,10 @@
       "fiscalizador": "",
       "super": false,
       "administrador": false,
+      "auditor": false,
       "master": true,
+      "dataIncioBloqueio" : "05/04/2023",
+      "dataFimBloqueio" : "05/04/2023",
       "source": "O"
     },
     {
@@ -86,7 +101,10 @@
       "fiscalizador": "",
       "super": false,
       "administrador": false,
+      "auditor": false,
       "master": true,
+      "dataIncioBloqueio" : "05/04/2023",
+      "dataFimBloqueio" : "05/04/2023",
       "source": "O"
     },
     {
@@ -101,7 +119,10 @@
       "fiscalizador": "",
       "super": false,
       "administrador": false,
+      "auditor": false,
       "master": true,
+      "dataIncioBloqueio" : "05/04/2023",
+      "dataFimBloqueio" : "05/04/2023",
       "source": "O"
     },
     {
@@ -116,7 +137,10 @@
       "fiscalizador": "",
       "super": false,
       "administrador": false,
+      "auditor": false,
       "master": true,
+      "dataIncioBloqueio" : "05/04/2023",
+      "dataFimBloqueio" : "05/04/2023",
       "source": "O"
     },
     
@@ -133,6 +157,8 @@
       "super": true,
       "administrador": true,
       "master": true,
+      "dataIncioBloqueio" : "05/04/2023",
+      "dataFimBloqueio" : "05/04/2023",
       "source": ""
     },
     
@@ -148,7 +174,10 @@
       "fiscalizador": "",
       "super": false,
       "administrador": false,
+      "auditor": false,
       "master": false,
+      "dataIncioBloqueio" : "05/04/2023",
+      "dataFimBloqueio" : "05/04/2023",
       "source": "O"
     },
    
@@ -164,7 +193,10 @@
       "fiscalizador": "",
       "super": false,
       "administrador": false,
+      "auditor": false,
       "master": false,
+      "dataIncioBloqueio" : "05/04/2023",
+      "dataFimBloqueio" : "05/04/2023",
       "source": "O"
     },
     {
@@ -179,7 +211,10 @@
       "fiscalizador": "",
       "super": false,
       "administrador": false,
+      "auditor": false,
       "master": true,
+      "dataIncioBloqueio" : "05/04/2023",
+      "dataFimBloqueio" : "05/04/2023",
       "source": "O"
     },
     {
@@ -194,7 +229,10 @@
       "fiscalizador": "",
       "super": false,
       "administrador": false,
+      "auditor": false,
       "master": false,
+      "dataIncioBloqueio" : "05/04/2023",
+      "dataFimBloqueio" : "05/04/2023",
       "source": "O"
     }
   ]

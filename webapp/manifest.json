@@ -185,6 +185,16 @@
           "pattern": "CadastroATAs",
           "name": "CadastroATAs",
           "target": "CadastroATAs"
+        },
+        {
+          "pattern": "Usuarios",
+          "name": "Usuarios",
+          "target": "Usuarios"
+        },
+        {
+          "pattern": "TesteCriacao",
+          "name": "TesteCriacao",
+          "target": "TesteCriacao"
         }
       ],
       "targets": {
@@ -290,6 +300,16 @@
           "viewName": "CadastroATAs",
           "viewLevel": 3,
           "viewPath": "MyUI5WebApp.src.pages.CadastroATAs"
+        },
+        "Usuarios": {
+          "viewName": "Usuarios",
+          "viewLevel": 3,
+          "viewPath": "MyUI5WebApp.src.pages.Usuarios"
+        },
+        "TesteCriacao": {
+          "viewName": "TesteCriacao",
+          "viewLevel": 3,
+          "viewPath": "MyUI5WebApp.src.pages.TesteCriacao"
         }
       }
     }
